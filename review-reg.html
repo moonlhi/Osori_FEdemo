@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리뷰 작성 | Emade</title>
+    <!-- 파일 경로 변경 시 수정에 유의해주세요 -->
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/variable.css" />
+    <link rel="stylesheet" href="/default.css" />
+    <link rel="stylesheet" href="/review-reg.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Emade</a>
+      <form class="search">
+        <input type="text" placeholder="상품, 태그로 검색해보세요!" />
+        <button><img src="/svg/search.svg" /></button>
+      </form>
+      <!-- js 적용 시 로그인/로그아웃 수정. -->
+      <div class="menu">
+        <a href="#" class="menu_list">로그아웃</a>
+        <a href="#" class="menu_list">찜</a>
+        <a href="#" class="menu_list">마이페이지</a>
+        <a href="#" class="menu_list">장바구니</a>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#">전체</a>
+      <a href="#">뜨개질</a>
+      <a href="#">키링/액세서리</a>
+      <a href="#">문구</a>
+      <a href="#">수공예품</a>
+      <a href="#">DIY</a>
+      <a href="#">홈데코</a>
+      <a href="#">랭킹</a>
+      <a href="#">기타</a>
+    </nav>
+
+    <main class="review-reg">
+      <div class="review-reg__left">
+        <h1 class="review-reg__title">리뷰 작성</h1>
+        <!-- ===== 구매한 상품 ===== -->
+        <section class="order-item">
+          <img
+            class="order-item__img"
+            src="/img/review-product-image/MainThumnail.png"
+            alt=""
+          />
+          <div class="order-item__info">
+            <p class="order-item__name">뜨개 토마토 키링</p>
+            <p class="order-item__option">옵션: 기본</p>
+            <p class="order-item__date">2026.10.08 구매</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- ===== 작성 폼 ===== -->
+      <div class="review-reg__right">
+        <form
+          class="review-form"
+          action="#"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <section class="rating-input">
+            <div class="rating-input__title">상품은 어떠셨나요?</div>
+            <div class="rating-input__stars">
+              <img src="/svg/star-rate/large_5.svg" />
+            </div>
+            <!-- 별점에 따라 문구 바꾸기는 JS 붙일 때 구현 -->
+            <p class="rating-input__badge">매우 만족해요</p>
+          </section>
+
+          <div class="review-form__field">
+            <label for="review-text" class="review-form__label"
+              >자세한 후기</label
+            >
+            <textarea
+              id="review-text"
+              class="review-form__textarea"
+              name="content"
+              placeholder="소재감, 색감, 배송 상태 등 솔직한 후기를 남겨주세요"
+              minlength="20"
+              required
+            ></textarea>
+            <!-- 글자 수 세기는 JS 붙일 때 구현 -->
+            <p class="review-form__count">0 / 최소 20자</p>
+          </div>
+
+          <div class="review-form__field">
+            <p class="review-form__label">사진 첨부 <span>최대 5장</span></p>
+            <ul class="photo-upload">
+              <li>
+                <label class="photo-upload__add">
+                  <input type="file" name="photos" accept="image/*" multiple />
+                  <img src="/svg/camera.svg" alt="" />
+                  <span>3/5</span>
+                </label>
+              </li>
+              <li class="photo-upload__item">
+                <img src="/img/review-product-image/Thumbnail2.png" alt="" />
+                <button type="button" class="photo-upload__remove">
+                  <img src="/svg/close.svg" alt="사진 삭제" />
+                </button>
+              </li>
+              <li class="photo-upload__item">
+                <img src="/img/review-product-image/Thumbnail3.png" alt="" />
+                <button type="button" class="photo-upload__remove">
+                  <img src="/svg/close.svg" alt="사진 삭제" />
+                </button>
+              </li>
+              <li class="photo-upload__item">
+                <img src="/img/review-product-image/Thumbnail4.png" alt="" />
+                <button type="button" class="photo-upload__remove">
+                  <img src="/svg/close.svg" alt="사진 삭제" />
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="review-form__actions">
+            <a
+              href="/mypage-history.html"
+              class="review-form__btn review-form__btn--cancel"
+              >취소</a
+            >
+            <a href="/review-detail.html">
+              <button
+                type="submit"
+                class="review-form__btn review-form__btn--submit"
+              >
+                등록하기
+              </button>
+            </a>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <span class="logo">Emade</span>
+      <p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
+      <div class="footer_link">
+        <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
+        <a href="#">문의</a>
+      </div>
+    </footer>
+  </body>
+</html>

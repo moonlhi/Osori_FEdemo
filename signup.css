@@ -1,0 +1,140 @@
+body {
+  align-items: center;
+  padding: 80px 16px;
+  color: var(--color-text-primary);
+}
+
+/* ---------- 카드 ---------- */
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 720px;
+  min-height: 660px;
+  padding: 40px 24px;
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+}
+
+.auth__logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.auth__title {
+  margin-top: 26px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ---------- 폼 ---------- */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 424px;
+  margin-top: 56px;
+}
+
+.auth-form__input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 6px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--color-text-primary);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.auth-form__input::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.auth-form__input:focus {
+  border-color: var(--color-border-focus);
+}
+
+/* 이메일 + 중복 확인 버튼 */
+.auth-form__field {
+  position: relative;
+}
+
+.auth-form__input--with-btn {
+  padding-right: 96px; /* 글자가 버튼 밑으로 들어가지 않게 */
+}
+
+.auth-form__check {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+  background: var(--color-primary-light);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.auth-form__check:hover {
+  background: #d6e9e0;
+}
+
+/* 에러 문구: 평소에는 숨기되 자리는 유지 */
+.auth-form__error {
+  margin: -6px 0 0 -2px;
+  font-size: 13px;
+  color: #e5484d;
+  visibility: hidden;
+}
+
+.auth-form.is-error .auth-form__error {
+  visibility: visible;
+}
+
+/* ---------- 회원가입 버튼 ---------- */
+.auth-form__submit {
+  height: 48px;
+  margin-top: 34px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--color-primary);
+  font: inherit;
+  font-size: 19px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 비활성화: 칸이 비었거나 형식이 틀리면 */
+.auth-form:invalid .auth-form__submit {
+  background: #2e7d5b;
+  color: rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+}
+
+/* ---------- 아래 링크 ---------- */
+.auth__switch {
+  margin-top: 28px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.auth__switch a {
+  margin-left: 22px;
+  color: var(--color-primary);
+}
+
+.auth__switch a:hover {
+  text-decoration: underline;
+}

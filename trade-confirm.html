@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>거래 확정 | Emade</title>
+    <!-- 파일 경로 변경 시 수정에 유의해주세요 -->
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/variable.css" />
+    <link rel="stylesheet" href="/trade-confirm.css" />
+  </head>
+  <body>
+    <main class="confirm">
+      <a href="/index.html" class="confirm__logo">Emade</a>
+      <p class="confirm__label">거래확정</p>
+
+      <h1 class="confirm__title">거래가 완료되었나요?</h1>
+      <p class="confirm__desc">거래 완료를 눌러 거래를 확정해보세요</p>
+
+      <form class="confirm__actions" action="#" method="post">
+        <a href="mypage-history.html">
+          <button
+            type="submit"
+            name="result"
+            value="success"
+            class="confirm__btn--success"
+          >
+            거래 완료
+          </button>
+        </a>
+        <a href="mypage-histroy.html">
+          <button
+            type="submit"
+            name="result"
+            value="fail"
+            class="confirm__btn--fail"
+          >
+            거래 미성사
+          </button>
+        </a>
+      </form>
+
+      <a href="/review-reg.html" class="confirm__review-link"
+        >거래 물품에 대한 리뷰를 작성해보세요!</a
+      >
+    </main>
+  </body>
+</html>
