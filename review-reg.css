@@ -1,7 +1,7 @@
 .review-reg {
   display: flex;
+  justify-content: center;
   gap: 115px;
-  flex: none;
   width: 1440px;
   margin: 0 auto;
   color: var(--color-text-primary);
@@ -22,8 +22,8 @@
 }
 
 .review-reg__right {
-  flex: 1;
-  min-width: 0;
+  flex: 0;
+  min-width: 680px;
   padding-top: 20px;
   padding-bottom: 46px;
 }
