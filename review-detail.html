@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>리뷰 작성 | Emade</title>
+    <title>리뷰 상세 | Emade</title>
     <!-- 파일 경로 변경 시 수정에 유의해주세요 -->
     <link rel="stylesheet" href="/reset.css" />
     <link rel="stylesheet" href="/variable.css" />
     <link rel="stylesheet" href="/default.css" />
-    <link rel="stylesheet" href="/css/review-reg.css" />
+    <link rel="stylesheet" href="/review-detail.css" />
   </head>
   <body>
     <header>
@@ -38,129 +38,96 @@
       <a href="#">기타</a>
     </nav>
 
-    <main class="review-reg">
-      <h1 class="review-reg__title">리뷰 작성</h1>
+    <main class="review-detail">
+      <a href="/review-list.html" class="back-link">
+        <img src="/svg/arrow-left.svg" alt="" />
+        리뷰 목록으로
+      </a>
 
-      <div class="review-reg__inner">
-        <!-- ===== 구매한 상품 ===== -->
-        <section class="order-item">
-          <img class="order-item__img" src="/images/tomato.jpg" alt="" />
-          <div class="order-item__info">
-            <p class="order-item__name">뜨개 토마토 키링</p>
-            <p class="order-item__option">옵션: 기본</p>
-            <p class="order-item__date">2026.10.08 구매</p>
-          </div>
-        </section>
-
-        <!-- ===== 작성 폼 ===== -->
-        <form
-          class="review-form"
-          action="#"
-          method="post"
-          enctype="multipart/form-data"
-        >
-          <!-- 별점: 라디오 버튼이라 JS 없이도 클릭하면 별이 채워져요.
-               CSS에서 순서를 뒤집어 보여주기 때문에 HTML은 5점부터 적어요. -->
-          <fieldset class="rating-input">
-            <legend class="rating-input__title">상품은 어떠셨나요?</legend>
-            <div class="rating-input__stars">
-              <input
-                type="radio"
-                id="rating-5"
-                name="rating"
-                value="5"
-                checked
-              />
-              <label for="rating-5">
-                <img class="star-off" src="/svg/star-off.svg" alt="5점" />
-                <img class="star-on" src="/svg/star-on.svg" alt="" />
-              </label>
-              <input type="radio" id="rating-4" name="rating" value="4" />
-              <label for="rating-4">
-                <img class="star-off" src="/svg/star-off.svg" alt="4점" />
-                <img class="star-on" src="/svg/star-on.svg" alt="" />
-              </label>
-              <input type="radio" id="rating-3" name="rating" value="3" />
-              <label for="rating-3">
-                <img class="star-off" src="/svg/star-off.svg" alt="3점" />
-                <img class="star-on" src="/svg/star-on.svg" alt="" />
-              </label>
-              <input type="radio" id="rating-2" name="rating" value="2" />
-              <label for="rating-2">
-                <img class="star-off" src="/svg/star-off.svg" alt="2점" />
-                <img class="star-on" src="/svg/star-on.svg" alt="" />
-              </label>
-              <input type="radio" id="rating-1" name="rating" value="1" />
-              <label for="rating-1">
-                <img class="star-off" src="/svg/star-off.svg" alt="1점" />
-                <img class="star-on" src="/svg/star-on.svg" alt="" />
-              </label>
-            </div>
-            <!-- 별점에 따라 문구 바꾸기는 JS 붙일 때 구현 -->
-            <p class="rating-input__badge">매우 만족해요</p>
-          </fieldset>
-
-          <div class="review-form__field">
-            <label for="review-text" class="review-form__label"
-              >자세한 후기</label
-            >
-            <textarea
-              id="review-text"
-              class="review-form__textarea"
-              name="content"
-              placeholder="소재감, 색감, 배송 상태 등 솔직한 후기를 남겨주세요"
-              minlength="20"
-              required
-            ></textarea>
-            <!-- 글자 수 세기는 JS 붙일 때 구현 -->
-            <p class="review-form__count">0 / 최소 20자</p>
-          </div>
-
-          <div class="review-form__field">
-            <p class="review-form__label">사진 첨부 <span>최대 5장</span></p>
-            <ul class="photo-upload">
-              <li>
-                <label class="photo-upload__add">
-                  <input type="file" name="photos" accept="image/*" multiple />
-                  <img src="/svg/camera.svg" alt="" />
-                  <span>3/5</span>
-                </label>
-              </li>
-              <li class="photo-upload__item">
-                <img src="/images/review-1.jpg" alt="" />
-                <button type="button" class="photo-upload__remove">
-                  <img src="/svg/close.svg" alt="사진 삭제" />
-                </button>
-              </li>
-              <li class="photo-upload__item">
-                <img src="/images/review-2.jpg" alt="" />
-                <button type="button" class="photo-upload__remove">
-                  <img src="/svg/close.svg" alt="사진 삭제" />
-                </button>
-              </li>
-              <li class="photo-upload__item">
-                <img src="/images/review-3.jpg" alt="" />
-                <button type="button" class="photo-upload__remove">
-                  <img src="/svg/close.svg" alt="사진 삭제" />
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <div class="review-form__actions">
-            <a
-              href="/mypage-history.html"
-              class="review-form__btn review-form__btn--cancel"
-              >취소</a
-            >
-            <button
-              type="submit"
-              class="review-form__btn review-form__btn--submit"
-            >
-              등록하기
+      <div class="review-detail__inner">
+        <!-- ===== 사진 ===== -->
+        <!-- 좌우 버튼·썸네일 클릭으로 사진 바꾸기는 JS 붙일 때 구현 -->
+        <section class="gallery">
+          <div class="gallery__main">
+            <img src="/img/review-product-image/MainThumnail.png" alt="" />
+            <button type="button" class="gallery__arrow gallery__arrow--prev">
+              <img src="/svg/arrow-left.svg" alt="이전 사진" />
+            </button>
+            <button type="button" class="gallery__arrow gallery__arrow--next">
+              <img src="/svg/arrow-right.svg" alt="다음 사진" />
             </button>
           </div>
-        </form>
+          <ul class="gallery__thumbs">
+            <li class="is-active">
+              <img src="/img/review-product-image/Thumbnail2.png" alt="" />
+            </li>
+            <li>
+              <img src="/img/review-product-image/Thumbnail3.png" alt="" />
+            </li>
+            <li>
+              <img src="/img/review-product-image/Thumbnail4.png" alt="" />
+            </li>
+            <li>
+              <img src="/img/review-product-image/Thumbnail5.png" alt="" />
+            </li>
+          </ul>
+        </section>
+
+        <!-- ===== 리뷰 내용 ===== -->
+        <section class="review-content">
+          <div class="review-content__top">
+            <div class="review-content__rating">
+              <div class="stars">
+                <img src="svg/star-rate/medium_5.svg" />
+              </div>
+              <strong>5.0</strong>
+            </div>
+            <button type="button" class="helpful-btn">
+              <img src="/svg/like.svg" alt="" />도움돼요 <span>10</span>
+            </button>
+          </div>
+
+          <div class="review-author">
+            <img class="review-author__profile" src="/svg/profile.svg" alt="" />
+            <div>
+              <p class="review-author__name">minji**</p>
+              <p class="review-author__date">2026.10.08</p>
+              <p class="review-author__option">옵션: <strong>기본</strong></p>
+            </div>
+          </div>
+
+          <p class="review-content__text">
+            손에 잡기 편한 디자인이라 사용하기 좋습니다.
+          </p>
+
+          <div class="seller-reply">
+            <p class="seller-reply__head">
+              <strong>판매자 답글</strong>
+              <span>2026.10.10</span>
+            </p>
+            <p class="seller-reply__text">
+              예쁘게 써주셔서 감사해요! 다음에도 정성껏 만들어 보내드릴게요~
+            </p>
+          </div>
+
+          <a href="/product-detail.html" class="product-summary">
+            <img
+              class="product-summary__img"
+              src="/img/review-product-image/MainThumnail.png"
+              alt=""
+            />
+            <div class="product-summary__info">
+              <p class="product-summary__name">뜨개 토마토 키링</p>
+              <p class="product-summary__meta">
+                12,000원
+                <span class="product-summary__rating">
+                  <img src="/svg/star-on.svg" alt="" />4.2 (128)
+                </span>
+              </p>
+            </div>
+            <span class="product-summary__go">상품 보러가기</span>
+          </a>
+        </section>
       </div>
     </main>
 

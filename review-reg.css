@@ -1,6 +1,9 @@
 .review-reg {
   display: flex;
   gap: 115px;
+  flex: none;
+  width: 1440px;
+  margin: 0 auto;
   color: var(--color-text-primary);
 }
 

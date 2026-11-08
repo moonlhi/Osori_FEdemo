@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리뷰 | Emade</title>
+    <!-- 파일 경로 변경 시 수정에 유의해주세요 -->
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/variable.css" />
+    <link rel="stylesheet" href="/default.css" />
+    <link rel="stylesheet" href="/review-list.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Emade</a>
+      <form class="search">
+        <input type="text" placeholder="상품, 태그로 검색해보세요!" />
+        <button><img src="/svg/search.svg" /></button>
+      </form>
+      <!-- js 적용 시 로그인/로그아웃 수정. -->
+      <div class="menu">
+        <a href="#" class="menu_list">로그아웃</a>
+        <a href="#" class="menu_list">찜</a>
+        <a href="#" class="menu_list">마이페이지</a>
+        <a href="#" class="menu_list">장바구니</a>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#">전체</a>
+      <a href="#">뜨개질</a>
+      <a href="#">키링/액세서리</a>
+      <a href="#">문구</a>
+      <a href="#">수공예품</a>
+      <a href="#">DIY</a>
+      <a href="#">홈데코</a>
+      <a href="#">랭킹</a>
+      <a href="#">기타</a>
+    </nav>
+
+    <main class="review-list">
+      <h1 class="review-list__title">리뷰 <span>128</span></h1>
+
+      <!-- ===== 별점 요약 ===== -->
+      <section class="rating-summary">
+        <div class="rating-summary__score">
+          <strong>4.2</strong>
+          <div class="stars">
+            <img src="/svg/star-rate/medium_5.svg" alt="" />
+          </div>
+          <p>리뷰 128개</p>
+        </div>
+
+        <ul class="rating-summary__bars">
+          <li style="--percent: 74%">
+            <span class="bar-label">5점</span><span class="bar"></span
+            ><span class="bar-value">74.0%</span>
+          </li>
+          <li style="--percent: 18%">
+            <span class="bar-label">4점</span><span class="bar"></span
+            ><span class="bar-value">18.0%</span>
+          </li>
+          <li style="--percent: 5%">
+            <span class="bar-label">3점</span><span class="bar"></span
+            ><span class="bar-value">5.0%</span>
+          </li>
+          <li style="--percent: 2%">
+            <span class="bar-label">2점</span><span class="bar"></span
+            ><span class="bar-value">2.0%</span>
+          </li>
+          <li style="--percent: 1%">
+            <span class="bar-label">1점</span><span class="bar"></span
+            ><span class="bar-value">1.0%</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ===== 포토 리뷰 ===== -->
+      <section class="photo-reviews">
+        <h2 class="photo-reviews__title">포토 리뷰 <span>42</span></h2>
+        <ul class="photo-reviews__list">
+          <li>
+            <a href="/review-detail.html"
+              ><img src="/img/review-product-image/Thumbnail.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="/review-detail.html"
+              ><img src="/img/review-product-image/Thumbnail2.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="/review-detail.html"
+              ><img src="/img/review-product-image/Thumbnail3.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="/review-detail.html"
+              ><img src="/img/review-product-image/Thumbnail4.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="/review-detail.html"
+              ><img src="/img/review-product-image/Thumbnail5.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="/review-detail.html"
+              ><img src="/img/review-product-image/Thumbnail6.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="photo-reviews__more">
+              <img src="/img/review-product-image/Thumbnail6.png" alt="" />
+              <span>+ 36</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ===== 정렬 ===== -->
+      <div class="review-toolbar">
+        <ul class="review-sort">
+          <li><a href="#" class="is-active">최신순</a></li>
+          <li><a href="#">평점 높은 순</a></li>
+          <li><a href="#">평점 낮은 순</a></li>
+          <li><a href="#">도움순</a></li>
+        </ul>
+        <label class="photo-only">
+          <input type="checkbox" name="photoOnly" />
+          포토 리뷰만
+        </label>
+      </div>
+
+      <!-- ===== 리뷰 목록 ===== -->
+      <ul class="reviews">
+        <li class="review-item">
+          <div class="review-item__body">
+            <div class="review-item__top">
+              <div class="stars">
+                <img src="/svg/star-rate/medium_5.svg" alt="" />
+              </div>
+              <button type="button" class="helpful-btn">
+                <img src="/svg/like.svg" alt="" />도움돼요 <span>10</span>
+              </button>
+            </div>
+            <a href="/review-detail.html" class="review-item__link">
+              <p class="review-item__meta">
+                <span class="review-item__name">minji**</span>
+                <span class="review-item__date">2026.10.08</span>
+              </p>
+              <p class="review-item__option">옵션: 기본</p>
+              <p class="review-item__text">
+                손에 잡기 편한 디자인이라 사용하기 좋습니다.
+              </p>
+            </a>
+          </div>
+          <ul class="review-item__photos">
+            <li>
+              <img src="/img/review-product-image/Thumbnail.png" alt="" />
+            </li>
+            <li>
+              <img src="/img/review-product-image/Thumbnail4.png" alt="" />
+            </li>
+            <li>
+              <img src="/img/review-product-image/Thumbnail2.png" alt="" />
+            </li>
+            <li>
+              <img src="/img/review-product-image/Thumbnail3.png" alt="" />
+            </li>
+          </ul>
+        </li>
+
+        <li class="review-item">
+          <div class="review-item__body">
+            <div class="review-item__top">
+              <div class="stars">
+                <img src="/svg/star-rate/medium_4.svg" alt="" />
+              </div>
+              <button type="button" class="helpful-btn">
+                <img src="/svg/like.svg" alt="" />도움돼요 <span>2</span>
+              </button>
+            </div>
+            <a href="/review-detail.html" class="review-item__link">
+              <p class="review-item__meta">
+                <span class="review-item__name">soo_ha**</span>
+                <span class="review-item__date">2026.10.05</span>
+              </p>
+              <p class="review-item__option">옵션: 기본</p>
+              <p class="review-item__text">
+                가족들에게도 추천했어요! 다들 만족스럽다고 하네요.
+              </p>
+            </a>
+          </div>
+          <ul class="review-item__photos">
+            <li>
+              <img src="/img/review-product-image/Thumbnail5.png" alt="" />
+            </li>
+          </ul>
+        </li>
+
+        <li class="review-item">
+          <div class="review-item__body">
+            <div class="review-item__top">
+              <div class="stars">
+                <img src="/svg/star-rate/medium_4.svg" alt="" />
+              </div>
+              <button type="button" class="helpful-btn">
+                <img src="/svg/like.svg" alt="" />도움돼요 <span>1</span>
+              </button>
+            </div>
+            <a href="/review-detail.html" class="review-item__link">
+              <p class="review-item__meta">
+                <span class="review-item__name">yeon**</span>
+                <span class="review-item__date">2026.10.05</span>
+              </p>
+              <p class="review-item__option">옵션: 기본</p>
+              <p class="review-item__text">
+                제품의 마감이 정교하고 고급스러워요. 아주 만족스럽습니다.
+              </p>
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- ===== 페이지 번호 =====
+           default.css가 모든 nav 태그에 스타일을 주기 때문에 nav 대신 div를 썼어요 -->
+      <div class="pagination">
+        <a href="#" class="pagination__arrow is-disabled">&lt;</a>
+        <a href="#" class="is-active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#" class="pagination__arrow">&gt;</a>
+      </div>
+    </main>
+
+    <footer>
+      <span class="logo">Emade</span>
+      <p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
+      <div class="footer_link">
+        <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
+        <a href="#">문의</a>
+      </div>
+    </footer>
+  </body>
+</html>
