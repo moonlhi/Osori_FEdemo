@@ -1,0 +1,224 @@
+/* =========================================
+   ranking.css  랭킹
+   reset.css → variable.css → default.css → card.css → ranking.css
+   ========================================= */
+
+.ranking-page {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 2px 120px 80px;
+  color: var(--color-text-primary);
+}
+
+.ranking {
+  display: flex;
+  min-height: 782px;
+  padding: 40px 0 26px;
+  background: #f9f9f9;
+}
+
+.ranking__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ---------- 인기 상품 ---------- */
+.popular {
+  width: 800px;
+  padding-left: 49px;
+  border-right: 2px solid #d9d9d9;
+}
+
+.popular__top {
+  display: flex;
+  gap: 26px;
+  margin: 51px 0 0 7px;
+}
+
+.popular__top-item {
+  position: relative;
+}
+
+/* card.css 기본 카드를 피그마(220x280) 크기에 맞춤 */
+.popular__top .card {
+  --card-height: 280px;
+  --card-pad: 8px;
+  border-radius: var(--radius-md);
+  filter: drop-shadow(0 2px 1px #d9d9d9);
+}
+
+.popular__top .card__thumb {
+  height: 114px;
+}
+
+.popular__top .card__info {
+  padding: 18px 6px 0;
+}
+
+.popular__top .card__artist {
+  margin-top: 24px;
+}
+
+.popular__top .card__artist-name {
+  font-weight: 400;
+}
+
+/* 순위 배지 */
+.badge {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: no-repeat center / contain;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.25));
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.badge--1st {
+  top: -20px;
+  left: -23px;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  background-image: url("/svg/badge-1st.svg");
+}
+
+.badge--2nd {
+  top: -19px;
+  left: -14px;
+  background-image: url("/svg/badge-2nd.svg");
+}
+
+.badge--3rd {
+  top: -17px;
+  left: -12px;
+  background-image: url("/svg/badge-3rd.svg");
+}
+
+/* 4~9위 */
+.popular__rest {
+  display: grid;
+  grid-template-columns: repeat(2, 340px);
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, 87px);
+  column-gap: 34px;
+  row-gap: 16px;
+  margin: 44px 0 0 3px;
+}
+
+.popular__rest-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rank-num {
+  width: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #6b6b6b;
+}
+
+/* card.css 가로형 카드를 피그마(300x87) 크기에 맞춤 */
+.popular__rest .card--horizontal {
+  --card-width: 300px;
+  --price-size: 12px;
+  --artist-size: 12px;
+  border-radius: var(--radius-md);
+}
+
+.popular__rest .card__title {
+  margin: 6px 0 4px;
+  font-weight: 600;
+}
+
+.popular__rest .card__price {
+  font-weight: 500;
+}
+
+.popular__rest .card__artist {
+  margin-top: 8px;
+}
+
+.popular__rest .card__artist-name {
+  font-weight: 400;
+}
+
+/* ---------- 인기 판매자 ---------- */
+.sellers {
+  flex: 1;
+  padding-left: 24px;
+}
+
+.sellers__list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  margin-top: 55px;
+}
+
+.seller-row {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.seller-row .rank-num {
+  width: 34px;
+  margin-right: 0;
+}
+
+.seller-row__img {
+  width: 50px;
+  height: 50px;
+  margin-right: 17px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.seller-row__info {
+  flex: 1;
+}
+
+.seller-row__name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.seller-row__count {
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b6b6b;
+}
+
+.seller-row__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 107px;
+  height: 40px;
+  margin-right: 29px;
+  border-radius: var(--radius-sm);
+  background: var(--color-border-default);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.seller-row__btn::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("/svg/chevron-right.svg") no-repeat center;
+}
+
+.seller-row__btn:hover {
+  background: #d1d5db;
+}

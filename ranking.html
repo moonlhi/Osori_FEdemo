@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>랭킹 | Emade</title>
+    <!-- 파일 경로 변경 시 수정에 유의해주세요 -->
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/variable.css" />
+    <link rel="stylesheet" href="/default.css" />
+    <link rel="stylesheet" href="/component/card.css" />
+    <link rel="stylesheet" href="/ranking.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" class="logo">Emade</a>
+      <form class="search">
+        <input type="text" placeholder="상품, 태그로 검색해보세요!" />
+        <button><img src="/svg/search.svg" alt="검색" /></button>
+      </form>
+      <!-- js 적용 시 로그인/로그아웃 수정. -->
+      <div class="menu">
+        <a href="#" class="menu_list">로그아웃</a>
+        <a href="#" class="menu_list">찜</a>
+        <a href="#" class="menu_list">마이페이지</a>
+        <a href="/cart.html" class="menu_list">장바구니</a>
+      </div>
+    </header>
+
+    <nav>
+      <a href="/product-list.html">전체</a>
+      <a href="/product-list.html">뜨개질</a>
+      <a href="/product-list.html">키링/액세서리</a>
+      <a href="/product-list.html">문구</a>
+      <a href="/product-list.html">수공예품</a>
+      <a href="/product-list.html">DIY</a>
+      <a href="/product-list.html">홈데코</a>
+      <a href="/ranking.html">랭킹</a>
+      <a href="/product-list.html">기타</a>
+    </nav>
+
+    <main class="ranking-page">
+      <div class="ranking">
+        <!-- ===== 인기 상품 ===== -->
+        <section class="popular">
+          <h1 class="ranking__title">인기 상품</h1>
+
+          <!-- card1 (기본 카드) + 순위 배지 -->
+          <ol class="popular__top">
+            <li class="popular__top-item">
+              <span class="badge badge--1st">1</span>
+              <article class="card">
+                <a href="/product-detail.html" class="card__link">
+                  <div class="card__thumb">
+                    <img src="/img/ranking/embroidery-kit.png" alt="프랑스 자수 키트" />
+                  </div>
+                  <div class="card__info">
+                    <p class="card__title">프랑스 자수 키트</p>
+                    <p class="card__price">12,000원</p>
+                    <div class="card__artist">
+                      <span class="card__profile"><img class="card__avatar" src="/svg/profile.svg" alt="" /></span>
+                      <span class="card__artist-name">한땀한땀</span>
+                    </div>
+                  </div>
+                </a>
+                <button type="button" class="card__like">
+                  <img src="/svg/찜=On.svg" alt="찜" />
+                </button>
+              </article>
+            </li>
+            <li class="popular__top-item">
+              <span class="badge badge--2nd">2</span>
+              <article class="card">
+                <a href="/product-detail.html" class="card__link">
+                  <div class="card__thumb">
+                    <img src="/img/ranking/elephant-quilt.png" alt="수작업 퀼트 매트" />
+                  </div>
+                  <div class="card__info">
+                    <p class="card__title">수작업 퀼트 매트</p>
+                    <p class="card__price">36,000원</p>
+                    <div class="card__artist">
+                      <span class="card__profile"><img class="card__avatar" src="/img/profile/dog.png" alt="" /></span>
+                      <span class="card__artist-name">오소리</span>
+                    </div>
+                  </div>
+                </a>
+                <button type="button" class="card__like">
+                  <img src="/svg/찜=On.svg" alt="찜" />
+                </button>
+              </article>
+            </li>
+            <li class="popular__top-item">
+              <span class="badge badge--3rd">3</span>
+              <article class="card">
+                <a href="/product-detail.html" class="card__link">
+                  <div class="card__thumb">
+                    <img src="/img/ranking/cat-ceramic.png" alt="고양이 도자 오브제" />
+                  </div>
+                  <div class="card__info">
+                    <p class="card__title">고양이 도자 오브제</p>
+                    <p class="card__price">24,000원</p>
+                    <div class="card__artist">
+                      <span class="card__profile"><img class="card__avatar" src="/img/profile/ewha-art.png" alt="" /></span>
+                      <span class="card__artist-name">이화여대 조예과</span>
+                    </div>
+                  </div>
+                </a>
+                <button type="button" class="card__like">
+                  <img src="/svg/찜=Off.svg" alt="찜" />
+                </button>
+              </article>
+            </li>
+          </ol>
+
+          <!-- card4 (가로형 카드) -->
+          <ol class="popular__rest" start="4">
+            <li class="popular__rest-item">
+              <span class="rank-num">4</span>
+              <article class="card card--horizontal">
+                <a href="/product-detail.html" class="card__link">
+                  <div class="card__thumb"><img src="/img/ranking/sticker4.png" alt="수제 스티커(4종)" /></div>
+                  <div class="card__info">
+                    <h3 class="card__title">수제 스티커(4종)</h3>
+                    <p class="card__price">8,000원</p>
+                    <div class="card__artist">
+                      <span class="card__profile"><img src="/svg/profile.svg" alt="" /></span>
+                      <span class="card__artist-name">오소리</span>
+                    </div>
+                  </div>
+                </a>
+                <button type="button" class="card__like">
+                  <img src="/svg/찜=On.svg" alt="찜" />
+                </button>
+              </article>
+            </li>
+            <li class="popular__rest-item">
+              <span class="rank-num">5</span>
+              <article class="card card--horizontal">
+                <a href="/product-detail.html" class="card__link">
+                  <div class="card__thumb"><img src="/img/ranking/wall-hanging.png" alt="원목 벽걸이" /></div>
+                  <div class="card__info">
+                    <h3 class="card__title">원목 벽걸이</h3>
+                    <p class="card__price">50,000원</p>
+                    <div class="card__artist">
+                      <span class="card__profile"><img src="/img/profile/person2.png" alt="" /></span>
+                      <span class="card__artist-name">minju12</span>
+                    </div>
+                  </div>
+                </a>
+                <button type="button" class="card__like">
+                  <img src="/svg/찜=On.svg" alt="찜" />
+                </button>
+              </article>
+            </li>
+            <li class="popular__rest-item">
+              <span class="rank-num">6</span>
+              <article class="card card--horizontal">
+                <a href="/product-detail.html" class="card__link">
+                  <div class="card__thumb"><img src="/img/ranking/knit-doll.png" alt="모자 쓴 뜨개 인형" /></div>
+                  <div class="card__info">
+                    <h3 class="card__title">모자 쓴 뜨개 인형</h3>
+                    <p class="card__price">12,000원</p>
+                    <div class="card__artist">
+                      <span class="card__profile"><img src="/img/profile/knit.png" alt="" /></span>
+                      <span class="card__artist-name">뜨개공방</span>
+                    </div>
+                  </div>
+                </a>
+                <button type="button" class="card__like">
+                  <img src="/svg/찜=On.svg" alt="찜" />
+                </button>
+              </article>
+            </li>
+            <li class="popular__rest-item">
+              <span class="rank-num">7</span>
+              <article class="card card--horizontal">
+                <a href="/product-detail.html" class="card__link">
+                  <div class="card__thumb"><img src="/img/ranking/succulent-mug.png" alt="다육이 화분 도자머그" /></div>
+                  <div class="card__info">
+                    <h3 class="card__title">다육이 화분 도자머그</h3>
+                    <p class="card__price">30,000원</p>
+                    <div class="card__artist">
+                      <span class="card__profile"><img src="/svg/profile.svg" alt="" /></span>
+                      <span class="card__artist-name">doremiii</span>
+                    </div>
+                  </div>
+                </a>
+                <button type="button" class="card__like">
+                  <img src="/svg/찜=On.svg" alt="찜" />
+                </button>
+              </article>
+            </li>
+            <li class="popular__rest-item">
+              <span class="rank-num">8</span>
+              <article class="card card--horizontal">
+                <a href="/product-detail.html" class="card__link">
+                  <div class="card__thumb"><img src="/img/ranking/duck.png" alt="귀여운 오리 오브제" /></div>
+                  <div class="card__info">
+                    <h3 class="card__title">귀여운 오리 오브제</h3>
+                    <p class="card__price">36,000원</p>
+                    <div class="card__artist">
+                      <span class="card__profile"><img src="/svg/profile.svg" alt="" /></span>
+                      <span class="card__artist-name">duckii</span>
+                    </div>
+                  </div>
+                </a>
+                <button type="button" class="card__like">
+                  <img src="/svg/찜=On.svg" alt="찜" />
+                </button>
+              </article>
+            </li>
+            <li class="popular__rest-item">
+              <span class="rank-num">9</span>
+              <article class="card card--horizontal">
+                <a href="/product-detail.html" class="card__link">
+                  <div class="card__thumb"><img src="/img/ranking/wood-dish.png" alt="원목 식기" /></div>
+                  <div class="card__info">
+                    <h3 class="card__title">원목 식기</h3>
+                    <p class="card__price">14,000원</p>
+                    <div class="card__artist">
+                      <span class="card__profile"><img src="/img/profile/person2.png" alt="" /></span>
+                      <span class="card__artist-name">minju12</span>
+                    </div>
+                  </div>
+                </a>
+                <button type="button" class="card__like">
+                  <img src="/svg/찜=On.svg" alt="찜" />
+                </button>
+              </article>
+            </li>
+          </ol>
+        </section>
+
+        <!-- ===== 인기 판매자 ===== -->
+        <section class="sellers">
+          <h2 class="ranking__title">인기 판매자</h2>
+          <ol class="sellers__list">
+            <li class="seller-row">
+              <span class="rank-num">1</span>
+              <img class="seller-row__img" src="/img/profile/ewha-art.png" alt="" />
+              <div class="seller-row__info">
+                <p class="seller-row__name">이화여대 조예과</p>
+                <p class="seller-row__count">판매 150건</p>
+              </div>
+              <a href="/seller-products.html" class="seller-row__btn">상품 보기</a>
+            </li>
+            <li class="seller-row">
+              <span class="rank-num">2</span>
+              <img class="seller-row__img" src="/img/profile/dog.png" alt="" />
+              <div class="seller-row__info">
+                <p class="seller-row__name">오소리</p>
+                <p class="seller-row__count">판매 120건</p>
+              </div>
+              <a href="/seller-products.html" class="seller-row__btn">상품 보기</a>
+            </li>
+            <li class="seller-row">
+              <span class="rank-num">3</span>
+              <img class="seller-row__img" src="/img/profile/person1.png" alt="" />
+              <div class="seller-row__info">
+                <p class="seller-row__name">한땀한땀</p>
+                <p class="seller-row__count">판매 100건</p>
+              </div>
+              <a href="/seller-products.html" class="seller-row__btn">상품 보기</a>
+            </li>
+            <li class="seller-row">
+              <span class="rank-num">4</span>
+              <img class="seller-row__img" src="/img/profile/knit.png" alt="" />
+              <div class="seller-row__info">
+                <p class="seller-row__name">뜨개공방</p>
+                <p class="seller-row__count">판매 81건</p>
+              </div>
+              <a href="/seller-products.html" class="seller-row__btn">상품 보기</a>
+            </li>
+            <li class="seller-row">
+              <span class="rank-num">5</span>
+              <img class="seller-row__img" src="/img/profile/person2.png" alt="" />
+              <div class="seller-row__info">
+                <p class="seller-row__name">minju12</p>
+                <p class="seller-row__count">판매 80건</p>
+              </div>
+              <a href="/seller-products.html" class="seller-row__btn">상품 보기</a>
+            </li>
+            <li class="seller-row">
+              <span class="rank-num">6</span>
+              <img class="seller-row__img" src="/img/profile/craft.png" alt="" />
+              <div class="seller-row__info">
+                <p class="seller-row__name">전통공예</p>
+                <p class="seller-row__count">판매 78건</p>
+              </div>
+              <a href="/seller-products.html" class="seller-row__btn">상품 보기</a>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <span class="logo">Emade</span>
+      <p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
+      <div class="footer_link">
+        <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
+        <a href="#">문의</a>
+      </div>
+    </footer>
+  </body>
+</html>
