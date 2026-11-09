@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품 수정 | Emade</title>
+    <!-- 파일 경로 변경 시 수정에 유의해주세요 -->
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/variable.css" />
+    <link rel="stylesheet" href="/default.css" />
+    <link rel="stylesheet" href="/component/card.css" />
+    <!-- 상품 등록과 같은 폼 스타일을 같이 씀 -->
+    <link rel="stylesheet" href="/product-reg.css" />
+    <link rel="stylesheet" href="/product-edit.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" class="logo">Emade</a>
+      <form class="search">
+        <input type="text" placeholder="상품, 태그로 검색해보세요!" />
+        <button><img src="/svg/search.svg" alt="검색" /></button>
+      </form>
+      <!-- js 적용 시 로그인/로그아웃 수정. -->
+      <div class="menu">
+        <a href="#" class="menu_list">로그아웃</a>
+        <a href="#" class="menu_list">찜</a>
+        <a href="#" class="menu_list">마이페이지</a>
+        <a href="/cart.html" class="menu_list">장바구니</a>
+      </div>
+    </header>
+
+    <nav>
+      <a href="/product-list.html">전체</a>
+      <a href="/product-list.html">뜨개질</a>
+      <a href="/product-list.html">키링/액세서리</a>
+      <a href="/product-list.html">문구</a>
+      <a href="/product-list.html">수공예품</a>
+      <a href="/product-list.html">DIY</a>
+      <a href="/product-list.html">홈데코</a>
+      <a href="/ranking.html">랭킹</a>
+      <a href="/product-list.html">기타</a>
+    </nav>
+
+    <main class="product-form product-form--edit">
+      <div class="breadcrumb">
+        <a href="/index.html">홈</a><span>&gt;</span>
+        <a href="#">판매자 센터</a><span>&gt;</span>
+        <strong>상품 수정</strong>
+      </div>
+
+      <div class="page-title">
+        <div>
+          <h1 class="page-title__main">상품 수정</h1>
+          <p class="page-title__sub">등록한 작품 정보를 수정할 수 있어요. 저장하면 바로 반영돼요.</p>
+        </div>
+        <p class="page-title__date">등록일 2026.09.21 · 최근 수정 2026.10.10</p>
+      </div>
+
+      <form class="columns" action="#">
+        <!-- ===== 왼쪽: 입력 폼 ===== -->
+        <div class="form">
+          <!-- 상품 이미지 -->
+          <section class="box">
+            <div class="box__head">
+              <h2 class="box__title">상품 이미지</h2>
+              <p class="box__desc">최대 10장까지 등록할 수 있어요. 첫 번째 사진이 대표 이미지로 보여요.</p>
+            </div>
+            <ul class="image-list">
+              <li>
+                <label class="upload">
+                  <input type="file" accept="image/*" multiple />
+                  <span class="upload__plus">+</span>
+                  <span>사진 추가</span>
+                  <span>3/10</span>
+                </label>
+              </li>
+              <li class="image-item">
+                <img src="/img/product-edit/bird.png" alt="상품 사진 1" />
+                <span class="image-item__badge">대표</span>
+                <button type="button" class="image-item__delete" aria-label="사진 삭제">×</button>
+              </li>
+              <li class="image-item">
+                <img src="/img/product-edit/embroidery.png" alt="상품 사진 2" />
+                <button type="button" class="image-item__delete" aria-label="사진 삭제">×</button>
+              </li>
+              <li class="image-item">
+                <img src="/img/product-edit/succulent.png" alt="상품 사진 3" />
+                <button type="button" class="image-item__delete" aria-label="사진 삭제">×</button>
+              </li>
+              <li class="image-slot"></li>
+            </ul>
+          </section>
+
+          <!-- 기본 정보 -->
+          <section class="box">
+            <div class="box__head">
+              <h2 class="box__title">기본 정보</h2>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="name">상품명<span class="required">*</span></label>
+              <input class="input" id="name" type="text" maxlength="40" placeholder="상품명을 입력해 주세요" value="손뜨개 곰돌이 인형 키링" />
+              <p class="field__help">12 / 40자</p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="category">카테고리<span class="required">*</span></label>
+              <select class="input select" id="category" required>
+                <option value="" disabled hidden>카테고리를 선택해 주세요</option>
+                <option selected>뜨개질</option>
+                <option>키링/액세서리</option>
+                <option>문구</option>
+                <option>수공예품</option>
+                <option>DIY</option>
+                <option>홈데코</option>
+                <option>기타</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label class="field__label" for="price">판매 가격<span class="required">*</span></label>
+                <div class="unit-input">
+                  <input class="input" id="price" type="text" placeholder="0" value="28,000" />
+                  <span>원</span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="field__label" for="stock">재고 수량<span class="required">*</span></label>
+                <div class="unit-input">
+                  <input class="input" id="stock" type="text" placeholder="0" value="5" />
+                  <span>개</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 상품 설명 -->
+          <section class="box">
+            <div class="box__head">
+              <h2 class="box__title">상품 설명</h2>
+              <p class="box__desc">소재, 크기, 제작 과정 등을 자세히 적어 주세요.</p>
+            </div>
+            <div class="textarea">
+              <textarea maxlength="2000" placeholder="예) 직접 손으로 뜬 곰돌이 인형 키링이에요. 크기는 약 8cm이고, 부드러운 면사를 사용했어요.">
+직접 손으로 한 코 한 코 떠서 만든 곰돌이 인형 키링이에요.
+부드러운 면사를 사용했고, 가방이나 열쇠에 달기 좋은 크기예요.
+
+· 크기: 약 8 x 6cm
+· 소재: 면 100%</textarea>
+              <p class="textarea__count">92 / 2000</p>
+            </div>
+          </section>
+
+          <!-- 옵션 -->
+          <section class="box">
+            <div class="box__head">
+              <h2 class="box__title">옵션</h2>
+              <p class="box__desc">색상, 크기 등 구매자가 고를 수 있는 옵션을 설정해요.</p>
+            </div>
+            <div class="choice-row">
+              <label class="radio"><input type="radio" name="option" />옵션 없음</label>
+              <label class="radio"><input type="radio" name="option" checked />옵션 있음</label>
+            </div>
+            <!-- '옵션 있음'일 때 보이는 영역 -->
+            <div class="option-group">
+              <div class="option-group__row">
+                <label class="option-group__label" for="option-name">옵션명</label>
+                <input class="input" id="option-name" type="text" value="색상" />
+              </div>
+              <div class="option-group__row">
+                <span class="option-group__label">옵션값</span>
+                <ul class="tag-list">
+                  <li class="tag tag--line">아이보리<button type="button" aria-label="삭제"></button></li>
+                  <li class="tag tag--line">베이지<button type="button" aria-label="삭제"></button></li>
+                  <li class="tag tag--line">연핑크<button type="button" aria-label="삭제"></button></li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="small-btn">+ 옵션 추가</button>
+          </section>
+
+          <!-- 거래 정보 -->
+          <section class="box">
+            <div class="box__head">
+              <h2 class="box__title">거래 정보</h2>
+            </div>
+
+            <div class="field">
+              <p class="field__label">거래 장소<span class="required">*</span></p>
+              <div class="choice-row">
+                <label class="check"><input type="checkbox" name="place" checked />정문</label>
+                <label class="check"><input type="checkbox" name="place" />ECC</label>
+                <label class="check"><input type="checkbox" name="place" checked />중앙도서관</label>
+                <label class="check"><input type="checkbox" name="place" checked />학문관</label>
+                <label class="check"><input type="checkbox" name="place" />포스코관</label>
+              </div>
+              <p class="field__help">여러 곳을 선택할 수 있어요. 거래는 이화여대 캠퍼스 안 공개된 장소에서만 가능해요.</p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="place-detail">세부 위치<span class="required">*</span></label>
+              <input class="input" id="place-detail" type="text" placeholder="장소별 세부 위치를 적어 주세요. 예) ECC 4번 출구 앞" value="중앙도서관  정문 앞, 학문관 편의점" />
+              <p class="field__help">구매자와 메시지를 주고받을 수 없어요. 만날 위치를 최대한 자세히 적어 주세요.</p>
+            </div>
+          </section>
+
+          <!-- 검색 태그 -->
+          <section class="box">
+            <div class="box__head">
+              <h2 class="box__title">검색 태그</h2>
+              <p class="box__desc">구매자가 검색할 때 쓰는 키워드예요. 최대 5개까지 등록할 수 있어요.</p>
+            </div>
+            <input class="input" type="text" placeholder="태그를 입력하고 Enter를 눌러 주세요" />
+            <ul class="tag-list">
+              <li class="tag">#뜨개인형<button type="button" aria-label="삭제"></button></li>
+              <li class="tag">#키링<button type="button" aria-label="삭제"></button></li>
+              <li class="tag">#졸업선물<button type="button" aria-label="삭제"></button></li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- ===== 오른쪽: 미리보기 + 안내 ===== -->
+        <aside class="side">
+          <section class="box box--side">
+            <h2 class="box__title">판매 상태</h2>
+            <div class="status">
+              <label class="radio"><input type="radio" name="status" checked />판매중</label>
+              <label class="radio"><input type="radio" name="status" />일시 품절</label>
+              <label class="radio"><input type="radio" name="status" />판매 종료</label>
+            </div>
+          </section>
+
+          <section class="box box--side">
+            <h2 class="box__title">판매 현황</h2>
+            <ul class="stats">
+              <li><strong>1,248</strong><span>조회</span></li>
+              <li><strong>86</strong><span>찜</span></li>
+              <li><strong>12</strong><span>판매</span></li>
+            </ul>
+          </section>
+
+          <section class="box box--side">
+            <h2 class="box__title">미리보기</h2>
+            <p class="box__desc">상품 목록에서 이렇게 보여요.</p>
+            <!-- card1 (component/card.html) 복사 -->
+            <article class="card">
+              <div class="card__link">
+                <div class="card__thumb"><img src="/img/product-edit/preview.png" alt="" /></div>
+                <div class="card__info">
+                  <p class="card__title">손뜨개 곰돌이 인형 키링</p>
+                  <p class="card__price">28,000원</p>
+                  <div class="card__artist">
+                    <span class="card__profile"><img class="card__avatar" src="/svg/profile.svg" alt="" /></span>
+                    <span class="card__artist-name">유나 공방</span>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="card__like">
+                <img src="/svg/찜=On.svg" alt="" />
+              </button>
+            </article>
+          </section>
+        </aside>
+
+        <!-- ===== 하단 버튼 ===== -->
+        <div class="action-bar">
+          <button type="button" class="btn btn--danger">상품 삭제</button>
+          <div class="action-bar__right">
+            <button type="button" class="btn btn--gray">취소</button>
+            <button type="submit" class="btn btn--primary">수정 완료</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <span class="logo">Emade</span>
+      <p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
+      <div class="footer_link">
+        <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
+        <a href="#">문의</a>
+      </div>
+    </footer>
+  </body>
+</html>

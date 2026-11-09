@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품 상세 | Emade</title>
+    <!-- 파일 경로 변경 시 수정에 유의해주세요 -->
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/variable.css" />
+    <link rel="stylesheet" href="/default.css" />
+    <link rel="stylesheet" href="/component/card.css" />
+    <link rel="stylesheet" href="/product-detail.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" class="logo">Emade</a>
+      <form class="search">
+        <input type="text" placeholder="상품, 태그로 검색해보세요!" />
+        <button><img src="/svg/search.svg" alt="검색" /></button>
+      </form>
+      <!-- js 적용 시 로그인/로그아웃 수정. -->
+      <div class="menu">
+        <a href="#" class="menu_list">로그아웃</a>
+        <a href="#" class="menu_list">찜</a>
+        <a href="#" class="menu_list">마이페이지</a>
+        <a href="/cart.html" class="menu_list">장바구니</a>
+      </div>
+    </header>
+
+    <nav>
+      <a href="/product-list.html">전체</a>
+      <a href="/product-list.html">뜨개질</a>
+      <a href="/product-list.html">키링/액세서리</a>
+      <a href="/product-list.html">문구</a>
+      <a href="/product-list.html">수공예품</a>
+      <a href="/product-list.html">DIY</a>
+      <a href="/product-list.html">홈데코</a>
+      <a href="/ranking.html">랭킹</a>
+      <a href="/product-list.html">기타</a>
+    </nav>
+
+    <main class="product-detail">
+      <!-- ===== 브레드크럼 ===== -->
+      <div class="breadcrumb">
+        <a href="/index.html">홈</a><span>&gt;</span>
+        <a href="/product-list.html">뜨개질</a><span>&gt;</span>
+        <strong>토끼 뜨개 가방</strong>
+      </div>
+
+      <div class="detail">
+        <!-- ===== 왼쪽: 사진 + 설명 ===== -->
+        <div class="detail__left">
+          <div class="gallery">
+            <div class="gallery__main">
+              <img src="/img/product-detail/rabbit-main.png" alt="토끼 뜨개 가방" />
+              <button type="button" class="gallery__arrow gallery__arrow--prev" aria-label="이전 사진"></button>
+              <button type="button" class="gallery__arrow gallery__arrow--next" aria-label="다음 사진"></button>
+            </div>
+            <ul class="gallery__thumbs">
+              <li><img src="/img/product-detail/rabbit-thumb1.png" alt="" /></li>
+              <li><img src="/img/product-detail/rabbit-thumb2.png" alt="" /></li>
+              <li><img src="/img/product-detail/rabbit-thumb3.png" alt="" /></li>
+              <li><img src="/img/product-detail/rabbit-thumb4.png" alt="" /></li>
+            </ul>
+          </div>
+
+          <section class="desc">
+            <h2 class="desc__title">상품 설명</h2>
+            <p class="desc__text">
+              분홍 꽃을 꼭 안은 토끼를 한 코 한 코 손으로 떠서 만들었어요.<br />
+              포근한 크림색 실에 긴 귀와 발그레한 볼, 등 뒤엔 동그란 꼬리까지 숨어 있어요.<br />
+              안쪽엔 작은 소지품을 넣을 수 있고, 고리에 걸어 귀엽게 활용할 수 있어요.
+            </p>
+          </section>
+        </div>
+
+        <!-- ===== 오른쪽: 상품 정보 + 구매 ===== -->
+        <div class="detail__right">
+          <div class="info__head">
+            <h1 class="info__name">토끼 뜨개 가방</h1>
+            <ul class="info__tags">
+              <li>#손뜨개</li>
+              <li>#꽃</li>
+              <li>#선물추천</li>
+            </ul>
+          </div>
+          <div class="info__price-row">
+            <p class="info__price">13,000원</p>
+            <button type="button" class="info__like">
+              <img src="/svg/찜=Off.svg" alt="찜하기" />
+            </button>
+          </div>
+
+          <div class="seller">
+            <a href="/seller-products.html" class="seller__link">
+              <img class="seller__avatar" src="/svg/profile.svg" alt="" />
+              <span class="seller__name">한땀한땀</span>
+            </a>
+            <button type="button" class="seller__follow">팔로우</button>
+          </div>
+
+          <!-- 옵션 -->
+          <div class="options">
+            <select class="select select--color" name="color">
+              <option>컬러</option>
+              <option>크림</option>
+              <option>핑크</option>
+            </select>
+            <select class="select select--size" name="size">
+              <option>사이즈</option>
+              <option>S</option>
+              <option>M</option>
+            </select>
+          </div>
+
+          <!-- 거래 정보 + 구매 -->
+          <div class="buy">
+            <div class="buy__selects">
+              <select class="select select--lg" name="place">
+                <option>거래 장소 선택</option>
+                <option>정문</option>
+                <option>중앙도서관</option>
+              </select>
+              <select class="select select--lg" name="time">
+                <option>거래 시간 선택</option>
+                <option>11/10(화) 12:00</option>
+                <option>11/11(수) 18:00</option>
+              </select>
+            </div>
+
+            <p class="buy__stock">잔여 수량: 5</p>
+            <div class="buy__qty-row">
+              <div class="qty">
+                <button type="button" class="qty__btn qty__btn--minus">-</button>
+                <input class="qty__input" type="text" value="1" />
+                <button type="button" class="qty__btn qty__btn--plus">+</button>
+              </div>
+              <p class="buy__total">13000원</p>
+            </div>
+
+            <div class="buy__actions">
+              <a href="/cart.html" class="btn btn--gray">장바구니</a>
+              <a href="#" class="btn btn--primary">바로 구매하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== 리뷰 + 관련상품 ===== -->
+      <div class="bottom">
+        <section class="reviews">
+          <div class="reviews__head">
+            <h2 class="reviews__title">리뷰 (12)</h2>
+            <a href="/review-list.html" class="reviews__more">더보기 &gt;</a>
+          </div>
+          <ul class="reviews__list">
+            <li class="review-card">
+              <div class="review-card__top">
+                <img class="review-card__avatar" src="/svg/profile.svg" alt="" />
+                <span class="review-card__name">마군</span>
+                <img class="review-card__stars" src="/svg/star-rate/medium_5.svg" alt="별점 5점" />
+              </div>
+              <p class="review-card__text">배송도 빠르고 친절해용</p>
+            </li>
+            <li class="review-card">
+              <div class="review-card__top">
+                <img class="review-card__avatar" src="/svg/profile.svg" alt="" />
+                <span class="review-card__name">시라소니</span>
+                <img class="review-card__stars" src="/svg/star-rate/medium_3.svg" alt="별점 3점" />
+              </div>
+              <p class="review-card__text">이쁘긴 한데 답장이 너무 느려요</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="related">
+          <h2 class="related__title">관련상품</h2>
+          <!-- card3 (작은 카드) 복사 -->
+          <div class="related__list">
+            <article class="card card--sm">
+              <a href="/product-detail.html" class="card__link">
+                <div class="card__thumb"><img src="/img/product-detail/related-puppy.png" alt="" /></div>
+                <div class="card__info">
+                  <h3 class="card__title">뜨개 가나디</h3>
+                  <p class="card__price">12,000원</p>
+                </div>
+              </a>
+              <button type="button" class="card__like">
+                <img src="/svg/찜=On.svg" alt="찜 해제" />
+              </button>
+            </article>
+            <article class="card card--sm">
+              <a href="/product-detail.html" class="card__link">
+                <div class="card__thumb"><img src="/img/product-detail/related-dino.png" alt="" /></div>
+                <div class="card__info">
+                  <h3 class="card__title">뜨개 엘사 친구</h3>
+                  <p class="card__price">12,000원</p>
+                </div>
+              </a>
+              <button type="button" class="card__like">
+                <img src="/svg/찜=On.svg" alt="찜 해제" />
+              </button>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div class="pagination">
+        <a href="#" class="pagination__arrow">&lt;</a>
+        <a href="#" class="is-active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#" class="pagination__arrow">&gt;</a>
+      </div>
+    </main>
+
+    <footer>
+      <span class="logo">Emade</span>
+      <p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
+      <div class="footer_link">
+        <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
+        <a href="#">문의</a>
+      </div>
+    </footer>
+  </body>
+</html>
