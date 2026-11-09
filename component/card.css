@@ -2,12 +2,13 @@
    reset.css → variable.css → card.css 순서로 html 파일에 불러와주세요.
    그 다음 필요한 card를 card.html 에서 골라 복사 붙여넣기 해주시면 됩니다.
    종류
-   - .card                  기본 카드
-     └ 작가 영역(.card__author) 빼면 card2
+   - .card                  기본 카드 (card1, card3)
+     └ 작가 영역(.card__author) 빼면 card3
+     └ 찜 해제 버튼(.card__btn) 넣으면 card2
 
-   - .card.card--sm         작은 카드 (card3)
+   - .card.card--sm         작은 카드 (card4)
 
-   - .card.card--horizontal 가로형 카드 (card4)
+   - .card.card--horizontal 가로형 카드 (card5)
    ========================================= */
 
 /* ---------- 기본 카드 ---------- */
@@ -33,7 +34,7 @@
 }
 .card--NoProfile {
   --card-height: 200px;
-     --card-width: 180px;
+  --card-width: 180px;
 }
 
 .card__link {

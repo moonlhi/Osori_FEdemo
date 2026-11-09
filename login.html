@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 | Emade</title>
+    <!-- 파일 경로 변경 시 수정에 유의해주세요 -->
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/variable.css" />
+    <link rel="stylesheet" href="/login.css" />
+  </head>
+  <body>
+    <main class="auth">
+      <a href="/index.html" class="auth__logo">Emade</a>
+      <h1 class="auth__title">로그인</h1>
+      <form class="auth-form" action="#" method="post">
+        <input
+          class="auth-form__input"
+          type="email"
+          name="email"
+          placeholder="이화 계정 이메일을 입력하세요."
+          pattern=".+@ewha\.ac\.kr"
+          required
+        />
+        <input
+          class="auth-form__input"
+          type="password"
+          name="password"
+          placeholder="비밀번호를 입력하세요."
+          required
+        />
+        <!-- 잘못된 이메일, 비밀번호 입력 시 tag -->
+        <p class="auth-form__error">*이메일 또는 비밀번호가 옳지 않습니다.</p>
+        <button type="submit" class="auth-form__submit">로그인</button>
+      </form>
+
+      <ul class="auth__find">
+        <li><a href="#">아이디 찾기</a></li>
+        <li><a href="#">비밀번호 찾기</a></li>
+      </ul>
+
+      <p class="auth__switch">
+        아직 회원이 아니신가요?
+        <a href="/signup.html">회원가입</a>
+      </p>
+    </main>
+  </body>
+</html>

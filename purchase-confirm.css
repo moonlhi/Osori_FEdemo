@@ -1,0 +1,71 @@
+body {
+  align-items: center;
+  padding: 80px 16px;
+  color: var(--color-text-primary);
+}
+
+/* ---------- 카드 ---------- */
+.confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 720px;
+  min-height: 660px;
+  padding: 40px 24px;
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+}
+
+.confirm__logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.confirm__icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 100px;
+  border: none;
+}
+
+.confirm__title {
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* ---------- 버튼 ---------- */
+.confirm__actions {
+  display: flex;
+  gap: 38px;
+  margin-top: 100px;
+}
+
+.confirm__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 138px;
+  height: 50px;
+  padding: 0 24px;
+  border-radius: var(--radius-sm);
+  background: #f3f4f3;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  transition: background 0.2s;
+}
+
+.confirm__btn:hover {
+  background: #e7e9e7;
+}
+
+.confirm__btn--primary {
+  background: var(--color-primary-light);
+}
+
+.confirm__btn--primary:hover {
+  background: #d6e9e0;
+}

@@ -1,0 +1,105 @@
+/* ---------- 배너 ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 1200px;
+  height: 308px;
+  padding: 0 58px 0 58px;
+  border-radius: var(--radius-xl);
+  background: var(--color-primary-light);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.banner__text {
+  flex: none;
+}
+
+.banner__sub {
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+
+.banner__title {
+  margin-top: 24px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.banner__desc {
+  margin-top: 40px;
+  font-size: 16px;
+  color: var(--color-text-primary);
+}
+
+.banner__btn {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  margin-top: 40px;
+  padding: 0 32px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.banner__img {
+  flex-shrink: 0;
+  width: 460px;
+  height: 320px;
+  /* object-fit: cover; */
+}
+
+/* ---------- 상품 섹션 ---------- */
+/* 인기 상품: 5개 한 줄 */
+.best-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 30px;
+}
+
+.recommend-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  gap: 60px;
+}
+
+.card {
+  flex: none;
+}
+
+/* 추천 상품 */
+.section__nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 46px 0px 20px 0px;
+  flex: none;
+  white-space: nowrap;
+}
+
+.section-head__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.section-head__more {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.section-head__more:hover {
+  color: var(--color-primary);
+}
