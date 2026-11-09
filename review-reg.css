@@ -51,11 +51,6 @@
   font-weight: 700;
 }
 
-.order-item__option {
-  margin-top: 18px;
-  font-size: 14px;
-}
-
 .order-item__date {
   margin-top: 16px;
   font-size: 14px;
@@ -86,17 +81,6 @@
 
 .rating-input__stars img {
   height: 46px;
-}
-
-.rating-input__badge {
-  display: inline-block;
-  margin-top: 14px;
-  padding: 9px 10px;
-  border-radius: 6px;
-  background: var(--color-primary-light);
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--color-primary);
 }
 
 /* 입력 칸 공통 */

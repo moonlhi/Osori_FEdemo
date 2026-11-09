@@ -244,11 +244,6 @@
   color: var(--color-text-secondary);
 }
 
-.review-item__option {
-  margin-top: 16px;
-  font-size: 14px;
-}
-
 .review-item__text {
   margin-top: 16px;
   font-size: 14px;
