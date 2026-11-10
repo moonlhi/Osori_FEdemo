@@ -1,41 +1,216 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>거래 내역</title><link href="reset.css" rel="stylesheet"/>
-<link href="variable.css" rel="stylesheet"/>
-<link href="default.css" rel="stylesheet"/>
-<link href="component/card.css" rel="stylesheet"/>
-<link href="css/pages.css" rel="stylesheet"/></head><body><header>
-<a class="logo" href="index.html">Emade</a>
-<form class="search">
-<input placeholder="상품, 태그로 검색해보세요!" type="text"/>
-<button type="button"><img src="svg/search.svg"/></button>
-</form>
-<!-- js 적용 시 로그인/로그아웃 수정. -->
-<div class="menu">
-<a class="menu_list" href="#">로그아웃</a>
-<a class="menu_list" href="#">찜</a>
-<a class="menu_list" href="#">마이페이지</a>
-<a class="menu_list" href="#">장바구니</a>
-</div>
-</header>
-<nav>
-<a href="#">전체</a>
-<a href="#">뜨개질</a>
-<a href="#">키링/액세서리</a>
-<a href="#">문구</a>
-<a href="#">수공예품</a>
-<a href="#">DIY</a>
-<a href="#">홈데코</a>
-<a href="#">랭킹</a>
-<a href="#">기타</a>
-</nav><div class="crumb">홈 &gt; 마이페이지</div><main class="page"><aside class="side"><h2>마이페이지</h2><nav class="mypage-side-nav">
-<a href="mypage-info.html">내 정보</a><a href="mypage-schedule.html">나의 거래 일정</a><a href="mypage-wishlist.html">찜 목록</a><a href="mypage-myreg.html">내가 등록한 상품</a><a class="active" href="mypage-history.html">거래 내역</a><a href="mypage-review.html">작성한 리뷰</a>
-</nav></aside><section class="main"><div class="sectionhead"><h1 class="title">거래 내역 <small>7</small></h1><select class="sort"><option>최근 거래순</option></select></div><div class="filters">전체 7　　구매 5　　판매 2</div><article class="historyrow"><div class="thumb"><img alt="원목 식기 세트" src="img/ranking/wood-dish.png"/></div><div class="hdesc"><div><span class="pill sale">판매</span> <span class="pill state-planned">거래 예정</span></div><b>원목 식기 세트</b><small>구매자 꿀벌 · 1개 · 18,000원</small></div><div class="hdate">⌖　학관<br/>◷　11/4(수) 18:00</div><div class="hbuttons"><button class="btn-gray">거래 취소</button><a class="detail-link" href="purchase-statement.html">자세한 거래내역</a></div></article><article class="historyrow"><div class="thumb"><img alt="곰돌이 인형 키링" src="img/cart/keyring.png"/></div><div class="hdesc"><div><span class="pill purchase">구매</span> <span class="pill state-wait">확정 대기</span></div><b>곰돌이 인형 키링</b><small>판매자 오소리 · 2개 · 56,000원</small></div><div class="hdate">⌖　정문 앞<br/>◷　11/4(수) 15:00</div><div class="hbuttons"><button class="btn-green">거래 확정</button><a class="detail-link" href="purchase-statement-wait.html">자세한 거래내역</a></div></article><article class="historyrow"><div class="thumb"><img alt="곰돌이 인형 키링" src="img/cart/keyring.png"/></div><div class="hdesc"><div><span class="pill purchase">구매</span> <span class="pill state-planned">거래 예정</span></div><b>곰돌이 인형 키링</b><small>판매자 오소리 · 2개 · 56,000원</small></div><div class="hdate">⌖　정문 앞<br/>◷　11/3(화) 12:00</div><div class="hbuttons"><button class="btn-gray">거래 취소</button><a class="detail-link" href="purchase-statement.html">자세한 거래내역</a></div></article><article class="historyrow"><div class="thumb"><img alt="코끼리 퀼트 파우치" src="img/product-list/embroidery-candle.png"/></div><div class="hdesc"><div><span class="pill purchase">구매</span> <span class="pill state-failed">거래 실패</span></div><b>코끼리 퀼트 파우치</b><small>판매자 퀼트하우스 · 1개 · 14,000원</small></div><div class="hdate">⌖　학관<br/>◷　11/1(일) 16:00</div><div class="hbuttons"><a class="btn-gray" href="purchase-statement-failed.html">거래 확인하기</a><a class="detail-link" href="purchase-statement-failed.html">자세한 거래내역</a></div></article><article class="historyrow"><div class="thumb"><img alt="프랑스 자수 키트" src="img/product-list/embroidery-candle.png"/></div><div class="hdesc"><div><span class="pill purchase">구매</span> <span class="pill state-done">거래 완료</span></div><b>프랑스 자수 키트</b><small>판매자 수놓는밤 · 1개 · 12,000원</small></div><div class="hdate">⌖　후문<br/>◷　10/30(금) 17:00</div><div class="hbuttons"><button class="btn-green">리뷰 쓰기</button><a class="detail-link" href="purchase-statement-done.html">자세한 거래내역</a></div></article><article class="historyrow"><div class="thumb"><img alt="도자 머그컵" src="img/ranking/cat-ceramic.png"/></div><div class="hdesc"><div><span class="pill sale">판매</span> <span class="pill state-done">거래 완료</span></div><b>도자 머그컵</b><small>구매자 이화 · 1개 · 15,000원</small></div><div class="hdate">⌖　포스코관<br/>◷　10/28(수) 13:00</div><div class="hbuttons"><button class="btn-gray">받은 리뷰 보기</button><a class="detail-link" href="purchase-statement-done.html">자세한 거래내역</a></div></article><article class="historyrow"><div class="thumb"><img alt="마스킹테이프 세트" src="img/product-list/rosette.png"/></div><div class="hdesc"><div><span class="pill purchase">구매</span> <span class="pill state-cancel">거래 취소</span></div><b>마스킹테이프 세트</b><small>판매자 테이프상점 · 3개 · 9,000원</small></div><div class="hdate">⌖　정문 앞<br/>◷　10/25(일) 15:00</div><div class="hbuttons"><button class="btn-gray">다시 담기</button><a class="detail-link" href="purchase-statement-cancel.html">자세한 거래내역</a></div></article><div class="pagination">&lt;　1　2　3　4　5　&gt;</div></section></main><footer>
-<span class="logo">Emade</span>
-<p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
-<div class="footer_link">
-<a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>거래 내역</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="variable.css" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" />
+    <link href="component/card.css" rel="stylesheet" />
+    <link href="css/pages.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">Emade</a>
+      <form class="search">
+        <input placeholder="상품, 태그로 검색해보세요!" type="text" />
+        <button type="button"><img src="svg/search.svg" /></button>
+      </form>
+      <!-- js 적용 시 로그인/로그아웃 수정. -->
+      <div class="menu">
+        <a href="#" class="menu_list">로그아웃</a>
+        <a href="/mypage-wishlist.html" class="menu_list">찜</a>
+        <a href="/mypage-info.html" class="menu_list">마이페이지</a>
+        <a href="/cart.html" class="menu_list">장바구니</a>
+      </div>
+    </header>
+    <nav>
+      <a href="product-list.html">전체</a>
+      <a href="product-list.html">뜨개질</a>
+      <a href="product-list.html">키링/액세서리</a>
+      <a href="product-list.html">문구</a>
+      <a href="product-list.html">수공예품</a>
+      <a href="product-list.html">DIY</a>
+      <a href="product-list.html">홈데코</a>
+      <a href="ranking.html">랭킹</a>
+      <a href="product-list.html">기타</a>
+    </nav>
+    <div class="crumb">홈 &gt; 마이페이지</div>
+    <main class="page">
+      <aside class="side">
+        <h2>마이페이지</h2>
+        <nav class="mypage-side-nav">
+          <a href="mypage-info.html">내 정보</a
+          ><a href="mypage-schedule.html">나의 거래 일정</a
+          ><a href="mypage-wishlist.html">찜 목록</a
+          ><a href="mypage-myreg.html">내가 등록한 상품</a
+          ><a class="active" href="mypage-history.html">거래 내역</a
+          ><a href="mypage-review.html">작성한 리뷰</a>
+        </nav>
+      </aside>
+      <section class="main">
+        <div class="sectionhead">
+          <h1 class="title">거래 내역 <small>7</small></h1>
+          <select class="sort">
+            <option>최근 거래순</option>
+          </select>
+        </div>
+        <div class="filters">전체 7　　구매 5　　판매 2</div>
+        <article class="historyrow">
+          <div class="thumb">
+            <img alt="원목 식기 세트" src="img/ranking/wood-dish.png" />
+          </div>
+          <div class="hdesc">
+            <div>
+              <span class="pill sale">판매</span>
+              <span class="pill state-planned">거래 예정</span>
+            </div>
+            <b>원목 식기 세트</b><small>구매자 꿀벌 · 1개 · 18,000원</small>
+          </div>
+          <div class="hdate">⌖　학관<br />◷　11/4(수) 18:00</div>
+          <div class="hbuttons">
+            <button class="btn-gray">거래 취소</button
+            ><a class="detail-link" href="purchase-statement.html"
+              >자세한 거래내역</a
+            >
+          </div>
+        </article>
+        <article class="historyrow">
+          <div class="thumb">
+            <img alt="곰돌이 인형 키링" src="img/cart/keyring.png" />
+          </div>
+          <div class="hdesc">
+            <div>
+              <span class="pill purchase">구매</span>
+              <span class="pill state-wait">확정 대기</span>
+            </div>
+            <b>곰돌이 인형 키링</b><small>판매자 오소리 · 2개 · 56,000원</small>
+          </div>
+          <div class="hdate">⌖　정문 앞<br />◷　11/4(수) 15:00</div>
+          <div class="hbuttons">
+            <button class="btn-green">거래 확정</button
+            ><a class="detail-link" href="purchase-statement-wait.html"
+              >자세한 거래내역</a
+            >
+          </div>
+        </article>
+        <article class="historyrow">
+          <div class="thumb">
+            <img alt="곰돌이 인형 키링" src="img/cart/keyring.png" />
+          </div>
+          <div class="hdesc">
+            <div>
+              <span class="pill purchase">구매</span>
+              <span class="pill state-planned">거래 예정</span>
+            </div>
+            <b>곰돌이 인형 키링</b><small>판매자 오소리 · 2개 · 56,000원</small>
+          </div>
+          <div class="hdate">⌖　정문 앞<br />◷　11/3(화) 12:00</div>
+          <div class="hbuttons">
+            <button class="btn-gray">거래 취소</button
+            ><a class="detail-link" href="purchase-statement.html"
+              >자세한 거래내역</a
+            >
+          </div>
+        </article>
+        <article class="historyrow">
+          <div class="thumb">
+            <img
+              alt="코끼리 퀼트 파우치"
+              src="img/product-list/embroidery-candle.png"
+            />
+          </div>
+          <div class="hdesc">
+            <div>
+              <span class="pill purchase">구매</span>
+              <span class="pill state-failed">거래 실패</span>
+            </div>
+            <b>코끼리 퀼트 파우치</b
+            ><small>판매자 퀼트하우스 · 1개 · 14,000원</small>
+          </div>
+          <div class="hdate">⌖　학관<br />◷　11/1(일) 16:00</div>
+          <div class="hbuttons">
+            <a class="btn-gray" href="purchase-statement-failed.html"
+              >거래 확인하기</a
+            ><a class="detail-link" href="purchase-statement-failed.html"
+              >자세한 거래내역</a
+            >
+          </div>
+        </article>
+        <article class="historyrow">
+          <div class="thumb">
+            <img
+              alt="프랑스 자수 키트"
+              src="img/product-list/embroidery-candle.png"
+            />
+          </div>
+          <div class="hdesc">
+            <div>
+              <span class="pill purchase">구매</span>
+              <span class="pill state-done">거래 완료</span>
+            </div>
+            <b>프랑스 자수 키트</b
+            ><small>판매자 수놓는밤 · 1개 · 12,000원</small>
+          </div>
+          <div class="hdate">⌖　후문<br />◷　10/30(금) 17:00</div>
+          <div class="hbuttons">
+            <button class="btn-green">리뷰 쓰기</button
+            ><a class="detail-link" href="purchase-statement-done.html"
+              >자세한 거래내역</a
+            >
+          </div>
+        </article>
+        <article class="historyrow">
+          <div class="thumb">
+            <img alt="도자 머그컵" src="img/ranking/cat-ceramic.png" />
+          </div>
+          <div class="hdesc">
+            <div>
+              <span class="pill sale">판매</span>
+              <span class="pill state-done">거래 완료</span>
+            </div>
+            <b>도자 머그컵</b><small>구매자 이화 · 1개 · 15,000원</small>
+          </div>
+          <div class="hdate">⌖　포스코관<br />◷　10/28(수) 13:00</div>
+          <div class="hbuttons">
+            <button class="btn-gray">받은 리뷰 보기</button
+            ><a class="detail-link" href="purchase-statement-done.html"
+              >자세한 거래내역</a
+            >
+          </div>
+        </article>
+        <article class="historyrow">
+          <div class="thumb">
+            <img alt="마스킹테이프 세트" src="img/product-list/rosette.png" />
+          </div>
+          <div class="hdesc">
+            <div>
+              <span class="pill purchase">구매</span>
+              <span class="pill state-cancel">거래 취소</span>
+            </div>
+            <b>마스킹테이프 세트</b
+            ><small>판매자 테이프상점 · 3개 · 9,000원</small>
+          </div>
+          <div class="hdate">⌖　정문 앞<br />◷　10/25(일) 15:00</div>
+          <div class="hbuttons">
+            <button class="btn-gray">다시 담기</button
+            ><a class="detail-link" href="purchase-statement-cancel.html"
+              >자세한 거래내역</a
+            >
+          </div>
+        </article>
+        <div class="pagination">&lt;　1　2　3　4　5　&gt;</div>
+      </section>
+    </main>
+    <footer>
+      <span class="logo">Emade</span>
+      <p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
+      <div class="footer_link">
+        <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
         <a href="#">문의</a>
-</div>
-</footer>
-</body></html>
+      </div>
+    </footer>
+  </body>
+</html>
