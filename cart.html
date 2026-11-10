@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>장바구니 | Emade</title>
     <!-- 파일 경로 변경 시 수정에 유의해주세요 -->
-    <link rel="stylesheet" href="/reset.css" />
-    <link rel="stylesheet" href="/variable.css" />
-    <link rel="stylesheet" href="/default.css" />
-    <link rel="stylesheet" href="/cart.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/cart.css" />
   </head>
   <body>
     <header>
@@ -52,22 +52,32 @@
           </div>
 
           <div class="list-head">
-            <label class="check"><input type="checkbox" checked />전체 선택 (3/4)</label>
+            <label class="check"
+              ><input type="checkbox" checked />전체 선택 (3/4)</label
+            >
             <button type="button" class="text-btn">선택 삭제</button>
           </div>
 
           <ul class="cart-list">
             <!-- 기본 -->
             <li class="cart-item">
-              <label class="cart-item__check"><input type="checkbox" checked aria-label="선택" /></label>
-              <img class="cart-item__img" src="/img/cart/keyring.png" alt="곰돌이 인형 키링" />
+              <label class="cart-item__check"
+                ><input type="checkbox" checked aria-label="선택"
+              /></label>
+              <img
+                class="cart-item__img"
+                src="/img/cart/keyring.png"
+                alt="곰돌이 인형 키링"
+              />
               <div class="cart-item__info">
                 <div class="cart-item__top">
                   <div>
                     <p class="cart-item__name">곰돌이 인형 키링</p>
                     <p class="cart-item__sub">오소리 · 색상: 아이보리</p>
                   </div>
-                  <button type="button" class="cart-item__delete"><img src="/svg/x-thin.svg" alt="삭제" /></button>
+                  <button type="button" class="cart-item__delete">
+                    <img src="/svg/x-thin.svg" alt="삭제" />
+                  </button>
                 </div>
                 <div class="schedule">
                   <span class="schedule__place">정문 앞</span>
@@ -76,9 +86,13 @@
                 </div>
                 <div class="cart-item__bottom">
                   <div class="stepper">
-                    <button type="button" class="stepper__btn"><img src="/svg/minus.svg" alt="수량 빼기" /></button>
+                    <button type="button" class="stepper__btn">
+                      <img src="/svg/minus.svg" alt="수량 빼기" />
+                    </button>
                     <span class="stepper__num">2</span>
-                    <button type="button" class="stepper__btn"><img src="/svg/plus.svg" alt="수량 더하기" /></button>
+                    <button type="button" class="stepper__btn">
+                      <img src="/svg/plus.svg" alt="수량 더하기" />
+                    </button>
                   </div>
                   <button type="button" class="line-btn">옵션 변경</button>
                   <p class="cart-item__price">56,000원</p>
@@ -88,27 +102,41 @@
 
             <!-- 시간 겹침 (같은 판매자·같은 시간) -->
             <li class="cart-item is-conflict">
-              <label class="cart-item__check"><input type="checkbox" checked aria-label="선택" /></label>
-              <img class="cart-item__img" src="/img/cart/sticker.png" alt="스티커 4종" />
+              <label class="cart-item__check"
+                ><input type="checkbox" checked aria-label="선택"
+              /></label>
+              <img
+                class="cart-item__img"
+                src="/img/cart/sticker.png"
+                alt="스티커 4종"
+              />
               <div class="cart-item__info">
                 <div class="cart-item__top">
                   <div>
                     <p class="cart-item__name">스티커 4종</p>
                     <p class="cart-item__sub">오소리 · 옵션 없음</p>
                   </div>
-                  <button type="button" class="cart-item__delete"><img src="/svg/x-thin.svg" alt="삭제" /></button>
+                  <button type="button" class="cart-item__delete">
+                    <img src="/svg/x-thin.svg" alt="삭제" />
+                  </button>
                 </div>
                 <div class="schedule">
                   <span class="schedule__place">후문</span>
                   <span class="schedule__time">11/3(월) 12:00</span>
                   <button type="button" class="text-btn">변경</button>
                 </div>
-                <p class="cart-item__warning">위 키링과 같은 판매자·같은 시간이에요</p>
+                <p class="cart-item__warning">
+                  위 키링과 같은 판매자·같은 시간이에요
+                </p>
                 <div class="cart-item__bottom">
                   <div class="stepper">
-                    <button type="button" class="stepper__btn"><img src="/svg/minus.svg" alt="수량 빼기" /></button>
+                    <button type="button" class="stepper__btn">
+                      <img src="/svg/minus.svg" alt="수량 빼기" />
+                    </button>
                     <span class="stepper__num">1</span>
-                    <button type="button" class="stepper__btn"><img src="/svg/plus.svg" alt="수량 더하기" /></button>
+                    <button type="button" class="stepper__btn">
+                      <img src="/svg/plus.svg" alt="수량 더하기" />
+                    </button>
                   </div>
                   <button type="button" class="line-btn">옵션 변경</button>
                   <p class="cart-item__price">8,000원</p>
@@ -117,15 +145,23 @@
             </li>
 
             <li class="cart-item">
-              <label class="cart-item__check"><input type="checkbox" checked aria-label="선택" /></label>
-              <img class="cart-item__img" src="/img/cart/postcard.png" alt="꽃자수 엽서 세트" />
+              <label class="cart-item__check"
+                ><input type="checkbox" checked aria-label="선택"
+              /></label>
+              <img
+                class="cart-item__img"
+                src="/img/cart/postcard.png"
+                alt="꽃자수 엽서 세트"
+              />
               <div class="cart-item__info">
                 <div class="cart-item__top">
                   <div>
                     <p class="cart-item__name">꽃자수 엽서 세트</p>
                     <p class="cart-item__sub">자수하는 곰 · 옵션 없음</p>
                   </div>
-                  <button type="button" class="cart-item__delete"><img src="/svg/x-thin.svg" alt="삭제" /></button>
+                  <button type="button" class="cart-item__delete">
+                    <img src="/svg/x-thin.svg" alt="삭제" />
+                  </button>
                 </div>
                 <div class="schedule">
                   <span class="schedule__place">학관</span>
@@ -134,9 +170,13 @@
                 </div>
                 <div class="cart-item__bottom">
                   <div class="stepper">
-                    <button type="button" class="stepper__btn"><img src="/svg/minus.svg" alt="수량 빼기" /></button>
+                    <button type="button" class="stepper__btn">
+                      <img src="/svg/minus.svg" alt="수량 빼기" />
+                    </button>
                     <span class="stepper__num">1</span>
-                    <button type="button" class="stepper__btn"><img src="/svg/plus.svg" alt="수량 더하기" /></button>
+                    <button type="button" class="stepper__btn">
+                      <img src="/svg/plus.svg" alt="수량 더하기" />
+                    </button>
                   </div>
                   <button type="button" class="line-btn">옵션 변경</button>
                   <p class="cart-item__price">12,000원</p>
@@ -146,19 +186,31 @@
 
             <!-- 마감 (거래 시간 지남) -->
             <li class="cart-item is-closed">
-              <label class="cart-item__check"><input type="checkbox" aria-label="선택" /></label>
+              <label class="cart-item__check"
+                ><input type="checkbox" aria-label="선택"
+              /></label>
               <!-- 흐린 사진은 이미지 자체에 반영되어 있어요 -->
-              <img class="cart-item__img" src="/img/cart/cat-faded.png" alt="고양이 도자 오브제" />
+              <img
+                class="cart-item__img"
+                src="/img/cart/cat-faded.png"
+                alt="고양이 도자 오브제"
+              />
               <div class="cart-item__info">
                 <div class="cart-item__top">
                   <div>
                     <p class="cart-item__name">고양이 도자 오브제</p>
-                    <p class="cart-item__sub">quilt · 학관 1층 · 11/2(일) 18:00</p>
+                    <p class="cart-item__sub">
+                      quilt · 학관 1층 · 11/2(일) 18:00
+                    </p>
                   </div>
                   <span class="closed-tag">마감된 시간</span>
-                  <button type="button" class="cart-item__delete"><img src="/svg/x-thin.svg" alt="삭제" /></button>
+                  <button type="button" class="cart-item__delete">
+                    <img src="/svg/x-thin.svg" alt="삭제" />
+                  </button>
                 </div>
-                <button type="button" class="line-btn line-btn--self">시간 다시 고르기</button>
+                <button type="button" class="line-btn line-btn--self">
+                  시간 다시 고르기
+                </button>
               </div>
             </li>
           </ul>
@@ -188,7 +240,9 @@
               <p class="summary__note">결제는 거래 현장에서 직접 해요</p>
             </div>
             <!-- 겹치는 거래가 있으면 버튼 비활성 -->
-            <button type="button" class="summary__btn" disabled>거래 예약하기</button>
+            <button type="button" class="summary__btn" disabled>
+              거래 예약하기
+            </button>
             <p class="summary__error">겹치는 거래를 해결해 주세요</p>
           </section>
         </aside>
