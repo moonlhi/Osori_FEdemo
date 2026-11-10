@@ -120,33 +120,128 @@
             <button type="button" class="seller__follow">팔로우</button>
           </div>
 
-          <!-- 옵션 -->
-          <div class="options">
-            <select class="select select--color" name="color">
-              <option>컬러</option>
-              <option>크림</option>
-              <option>핑크</option>
-            </select>
-            <select class="select select--size" name="size">
-              <option>사이즈</option>
-              <option>S</option>
-              <option>M</option>
-            </select>
-          </div>
-
-          <!-- 거래 정보 + 구매 -->
+          <!-- 거래 정보 + 구매
+               판매 중단 상품은 .buy 에 is-stopped 클래스를 붙이면 '구매 불가' 버튼으로 바뀌어요 -->
           <div class="buy">
             <div class="buy__selects">
-              <select class="select select--lg" name="place">
-                <option>거래 장소 선택</option>
-                <option>정문</option>
-                <option>중앙도서관</option>
-              </select>
-              <select class="select select--lg" name="time">
-                <option>거래 시간 선택</option>
-                <option>11/10(화) 12:00</option>
-                <option>11/11(수) 18:00</option>
-              </select>
+              <!-- 거래 장소: JS 없이 details 태그로 펼쳐지게 함 -->
+              <details class="dropdown dropdown--place">
+                <summary class="dropdown__btn">거래 장소 선택</summary>
+                <ul class="place-list">
+                  <li>
+                    <label class="place-option">
+                      <input type="radio" name="place" checked />
+                      <span class="place-option__name">정문</span>
+                      <span class="place-option__detail">정문 앞 벤치</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="place-option">
+                      <input type="radio" name="place" />
+                      <span class="place-option__name">중앙도서관</span>
+                      <span class="place-option__detail">1층 로비 입구</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="place-option">
+                      <input type="radio" name="place" />
+                      <span class="place-option__name">ECC</span>
+                      <span class="place-option__detail">4번 출구 앞</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="place-option">
+                      <input type="radio" name="place" />
+                      <span class="place-option__name">학생문화관</span>
+                      <span class="place-option__detail">1층 편의점 앞</span>
+                    </label>
+                  </li>
+                </ul>
+              </details>
+
+              <!-- 거래 시간: 날짜 + 30분 블록 팝오버 -->
+              <details class="dropdown dropdown--time">
+                <summary class="dropdown__btn">거래 시간 선택</summary>
+                <div class="time-popover">
+                  <p class="time-popover__title">거래 날짜</p>
+                  <div class="calendar__month">
+                    <button type="button" class="calendar__nav" aria-label="이전 달"><img src="/svg/chevron-right.svg" alt="" /></button>
+                    <strong>2026년 11월</strong>
+                    <button type="button" class="calendar__nav calendar__nav--next" aria-label="다음 달"><img src="/svg/chevron-right.svg" alt="" /></button>
+                  </div>
+                  <div class="calendar__week">
+                    <span class="is-sun">일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span class="is-sat">토</span>
+                  </div>
+                  <div class="calendar__days">
+                    <span class="day">1</span>
+                    <span class="day">2</span>
+                    <span class="day">3</span>
+                    <span class="day">4</span>
+                    <span class="day">5</span>
+                    <label class="day is-available"><input type="radio" name="date" />6</label>
+                    <span class="day">7</span>
+                    <span class="day">8</span>
+                    <label class="day is-available"><input type="radio" name="date" />9</label>
+                    <span class="day">10</span>
+                    <label class="day is-available"><input type="radio" name="date" />11</label>
+                    <span class="day">12</span>
+                    <label class="day is-available"><input type="radio" name="date" />13</label>
+                    <span class="day">14</span>
+                    <span class="day">15</span>
+                    <label class="day is-available"><input type="radio" name="date" checked />16</label>
+                    <span class="day">17</span>
+                    <label class="day is-available"><input type="radio" name="date" />18</label>
+                    <span class="day">19</span>
+                    <label class="day is-available"><input type="radio" name="date" />20</label>
+                    <span class="day">21</span>
+                    <span class="day">22</span>
+                    <label class="day is-available"><input type="radio" name="date" />23</label>
+                    <span class="day">24</span>
+                    <label class="day is-available"><input type="radio" name="date" />25</label>
+                    <span class="day">26</span>
+                    <span class="day">27</span>
+                    <span class="day">28</span>
+                    <span class="day">29</span>
+                    <label class="day is-available"><input type="radio" name="date" />30</label>
+                  </div>
+                  <div class="calendar__legend">
+                    <span class="legend legend--available">예약 가능</span>
+                    <span class="legend legend--selected">선택한 날</span>
+                  </div>
+
+                  <hr class="time-popover__line" />
+
+                  <p class="time-popover__title">거래 시간</p>
+                  <div class="time-popover__head">
+                    <strong>11월 16일 (월)</strong>
+                    <span>30분 단위 · 회색은 마감</span>
+                  </div>
+                  <div class="time-slots">
+                    <label class="time-slot"><input type="radio" name="time" />07:00</label>
+                    <label class="time-slot"><input type="radio" name="time" />07:30</label>
+                    <label class="time-slot"><input type="radio" name="time" />12:00</label>
+                    <label class="time-slot"><input type="radio" name="time" />12:30</label>
+                    <span class="time-slot is-closed">13:00</span>
+                    <label class="time-slot"><input type="radio" name="time" />13:30</label>
+                    <label class="time-slot"><input type="radio" name="time" checked />14:00</label>
+                    <label class="time-slot"><input type="radio" name="time" />14:30</label>
+                    <label class="time-slot"><input type="radio" name="time" />15:00</label>
+                    <span class="time-slot is-closed">15:30</span>
+                    <label class="time-slot"><input type="radio" name="time" />16:00</label>
+                    <label class="time-slot"><input type="radio" name="time" />16:30</label>
+                    <label class="time-slot"><input type="radio" name="time" />17:00</label>
+                    <label class="time-slot"><input type="radio" name="time" />17:30</label>
+                    <label class="time-slot"><input type="radio" name="time" />18:00</label>
+                    <label class="time-slot"><input type="radio" name="time" />18:30</label>
+                    <label class="time-slot"><input type="radio" name="time" />19:00</label>
+                    <label class="time-slot"><input type="radio" name="time" />19:30</label>
+                  </div>
+                  <div class="time-popover__foot">
+                    <span>11/16 (월) 14:00 선택됨</span>
+                    <button type="button" class="time-popover__done">선택 완료</button>
+                  </div>
+                </div>
+              </details>
             </div>
 
             <p class="buy__stock">잔여 수량: 5</p>
@@ -164,6 +259,7 @@
             <div class="buy__actions">
               <a href="/cart.html" class="btn btn--gray">장바구니</a>
               <a href="#" class="btn btn--primary">바로 구매하기</a>
+              <span class="btn btn--stopped">구매 불가</span>
             </div>
           </div>
         </div>
