@@ -1,45 +1,457 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>내 정보</title><link href="reset.css" rel="stylesheet"/>
-<link href="variable.css" rel="stylesheet"/>
-<link href="default.css" rel="stylesheet"/>
-<link href="component/card.css" rel="stylesheet"/>
-<link href="css/pages.css" rel="stylesheet"/></head><body><header>
-<a class="logo" href="index.html">Emade</a>
-<form class="search">
-<input placeholder="상품, 태그로 검색해보세요!" type="text"/>
-<button type="button"><img src="svg/search.svg"/></button>
-</form>
-<!-- js 적용 시 로그인/로그아웃 수정. -->
-<div class="menu">
-<a class="menu_list" href="#">로그아웃</a>
-<a class="menu_list" href="#">찜</a>
-<a class="menu_list" href="#">마이페이지</a>
-<a class="menu_list" href="#">장바구니</a>
-</div>
-</header>
-<nav>
-<a href="#">전체</a>
-<a href="#">뜨개질</a>
-<a href="#">키링/액세서리</a>
-<a href="#">문구</a>
-<a href="#">수공예품</a>
-<a href="#">DIY</a>
-<a href="#">홈데코</a>
-<a href="#">랭킹</a>
-<a href="#">기타</a>
-</nav><div class="crumb">홈 &gt; 마이페이지</div><main class="page"><aside class="side"><h2>마이페이지</h2><nav class="mypage-side-nav">
-<a class="active" href="mypage-info.html">내 정보</a><a href="mypage-schedule.html">나의 거래 일정</a><a href="mypage-wishlist.html">찜 목록</a><a href="mypage-myreg.html">내가 등록한 상품</a><a href="mypage-history.html">거래 내역</a><a href="mypage-review.html">작성한 리뷰</a>
-</nav></aside><section class="main"><h1 class="title">내 정보</h1><div class="profile"><div class="avatar"><img alt="프로필 이미지" src="img/profile/dog.png"/></div><div><b>오소리</b><div class="stats"><span><strong>16위</strong><small>판매랭킹</small></span><span><strong>200</strong><small>팔로잉</small></span><span><strong>1000</strong><small>팔로워</small></span></div></div></div>
-<section class="dashsec"><div class="sectionhead"><h2>나의 거래일정 <small>일정 개수 54</small></h2><a href="mypage-schedule.html">나의 일정 수정</a></div><div class="calmini"><div class="calmonth"><div class="calendar-month-control"><button aria-label="이전 달" class="month-arrow" type="button"><img alt="" class="chevron-prev" src="svg/chevron-right.svg"/></button><strong>2026년 11월</strong><button aria-label="다음 달" class="month-arrow" type="button"><img alt="" src="svg/chevron-right.svg"/></button></div><button class="today-button" type="button">오늘</button></div><div class="calgrid"><div class="mini-weekday">일</div><div class="mini-weekday">월</div><div class="mini-weekday">화</div><div class="mini-weekday">수</div><div class="mini-weekday">목</div><div class="mini-weekday">금</div><div class="mini-weekday">토</div><div><b>1</b></div><div><b>2</b></div><div><b>3</b></div><div><b>4</b></div><div><b>5</b></div><div><b>6</b></div><div><b>7</b></div><div><b>8</b></div><div><b>9</b><i>구매</i> <em>판매</em></div><div><b>10</b></div><div><b>11</b></div><div><b>12</b></div><div><b>13</b></div><div><b>14</b></div><div><b>15</b></div><div><b>16</b></div><div><b>17</b></div><div><b>18</b></div><div><b>19</b></div><div><b>20</b></div><div><b>21</b></div><div><b>22</b></div><div><b>23</b><i>구매</i> <em>판매</em></div><div><b>24</b></div><div><b>25</b></div><div><b>26</b><i>구매</i> <em>판매</em></div><div><b>27</b></div><div><b>28</b></div><div><b>29</b></div><div><b>30</b></div></div></div></section>
-<section class="dashsec"><div class="sectionhead"><h2>찜 목록 <small>찜 개수 33</small></h2><a href="mypage-wishlist.html">더보기</a></div><div class="mini-products dashboard-products product-grid"><article class="card dashboard-card"><a class="card__link" href="#"><div class="card__thumb"><img alt="프랑스 자수 키트" loading="lazy" src="img/product-list/embroidery-candle.png"/></div><div class="card__info"><p class="card__title">프랑스 자수 키트</p><p class="card__price">12,000원</p><div class="card__artist"><span class="card__profile"><img alt="" src="img/profile/dog.png"/></span><span class="card__artist-name">뜨개장인</span></div></div></a><button aria-label="찜 추가" class="card__like" type="button"><img alt="" src="svg/찜=On.svg"/></button></article><article class="card dashboard-card"><a class="card__link" href="#"><div class="card__thumb"><img alt="노을 그림" loading="lazy" src="img/product-list/dreamcatcher.png"/></div><div class="card__info"><p class="card__title">노을 그림</p><p class="card__price">10,000원</p><div class="card__artist"><span class="card__profile"><img alt="" src="img/profile/dog.png"/></span><span class="card__artist-name">내가그린그림</span></div></div></a><button aria-label="찜 추가" class="card__like" type="button"><img alt="" src="svg/찜=On.svg"/></button></article><article class="card dashboard-card"><a class="card__link" href="#"><div class="card__thumb"><img alt="고양이 모형" loading="lazy" src="img/ranking/cat-ceramic.png"/></div><div class="card__info"><p class="card__title">고양이 모형</p><p class="card__price">8,000원</p><div class="card__artist"><span class="card__profile"><img alt="" src="img/profile/dog.png"/></span><span class="card__artist-name">룰루랄라</span></div></div></a><button aria-label="찜 추가" class="card__like" type="button"><img alt="" src="svg/찜=On.svg"/></button></article><article class="card dashboard-card"><a class="card__link" href="#"><div class="card__thumb"><img alt="도자기 오브제" loading="lazy" src="img/ranking/cat-ceramic.png"/></div><div class="card__info"><p class="card__title">고양이 모형</p><p class="card__price">8,000원</p><div class="card__artist"><span class="card__profile"><img alt="" src="img/profile/dog.png"/></span><span class="card__artist-name">룰루랄라</span></div></div></a><button aria-label="찜 추가" class="card__like" type="button"><img alt="" src="svg/찜=On.svg"/></button></article></div></section>
-<section class="dashsec"><div class="sectionhead"><h2>내가 등록한 상품 <small>총 상품 수 13</small></h2><a href="mypage-myreg.html">더보기</a></div><div class="mini-products dashboard-products product-grid"><article class="card card--NoProfile dashboard-card"><a class="card__link" href="#"><div class="card__thumb"><img alt="귤모양 키링" loading="lazy" src="img/product-list/rosette.png"/></div><div class="card__info"><p class="card__title">귤모양 키링</p><p class="card__price">3,000원</p></div></a></article><article class="card card--NoProfile dashboard-card"><a class="card__link" href="#"><div class="card__thumb"><img alt="강아지 키링" loading="lazy" src="img/product-list/nametag.png"/></div><div class="card__info"><p class="card__title">강아지 키링</p><p class="card__price">4,000원</p></div></a></article><article class="card card--NoProfile dashboard-card"><a class="card__link" href="#"><div class="card__thumb"><img alt="프랑스 자수 키트" loading="lazy" src="img/ranking/cat-ceramic.png"/></div><div class="card__info"><p class="card__title">프랑스 자수 키트</p><p class="card__price">12,000원</p></div></a></article><article class="card card--NoProfile dashboard-card"><a class="card__link" href="#"><div class="card__thumb"><img alt="고양이 모형" loading="lazy" src="img/product-list/embroidery-candle.png"/></div><div class="card__info"><p class="card__title">고양이 모형</p><p class="card__price">8,000원</p></div></a></article></div></section>
-<section class="dashsec"><div class="sectionhead"><h2>거래 내역 <small>총 거래 수 6</small></h2><a href="mypage-history.html">더보기</a></div><div class="dashboard-history-list"><article class="historyrow"><div class="thumb"><img alt="원목 식기 세트" src="img/ranking/wood-dish.png"/></div><div class="hdesc"><div><span class="pill sale">판매</span> <span class="pill state-planned">거래 예정</span></div><b>원목 식기 세트</b><small>구매자 꿀벌 · 1개 · 18,000원</small></div><div class="hdate">⌖　학관<br/>◷　11/4(수) 18:00</div><div class="hbuttons"><button class="btn-gray">거래 취소</button><a class="detail-link" href="purchase-statement.html">자세한 거래내역</a></div></article><article class="historyrow"><div class="thumb"><img alt="곰돌이 인형 키링" src="img/cart/keyring.png"/></div><div class="hdesc"><div><span class="pill purchase">구매</span> <span class="pill state-planned">거래 예정</span></div><b>곰돌이 인형 키링</b><small>판매자 오소리 · 2개 · 56,000원</small></div><div class="hdate">⌖　정문 앞<br/>◷　11/3(화) 12:00</div><div class="hbuttons"><button class="btn-gray">거래 취소</button><a class="detail-link" href="purchase-statement.html">자세한 거래내역</a></div></article><article class="historyrow"><div class="thumb"><img alt="코끼리 퀼트 파우치" src="img/product-list/embroidery-candle.png"/></div><div class="hdesc"><div><span class="pill purchase">구매</span> <span class="pill state-failed">거래 실패</span></div><b>코끼리 퀼트 파우치</b><small>판매자 퀼트하우스 · 1개 · 14,000원</small></div><div class="hdate">⌖　학관<br/>◷　11/1(일) 16:00</div><div class="hbuttons"><a class="btn-gray" href="purchase-statement.html">거래 확인하기</a><a class="detail-link" href="purchase-statement.html">자세한 거래내역</a></div></article><article class="historyrow"><div class="thumb"><img alt="프랑스 자수 키트" src="img/product-list/embroidery-candle.png"/></div><div class="hdesc"><div><span class="pill purchase">구매</span> <span class="pill state-done">거래 완료</span></div><b>프랑스 자수 키트</b><small>판매자 수놓는밤 · 1개 · 12,000원</small></div><div class="hdate">⌖　후문<br/>◷　10/30(금) 17:00</div><div class="hbuttons"><button class="btn-green">리뷰 쓰기</button><a class="detail-link" href="purchase-statement.html">자세한 거래내역</a></div></article></div></section><section class="dashsec"><div class="sectionhead"><h2>작성한 리뷰 <small>작성한 리뷰 수 100</small></h2><a href="mypage-review.html">더보기</a></div><div class="dashboard-review-cards"><article class="dashboard-review-card"><div class="dashboard-review-product"><img alt="귤모양 키링" src="img/product-list/rosette.png"/><div><b>귤모양 키링</b><span>3,000원</span><small>인생은달걀</small></div></div><div aria-label="별점 5점" class="dashboard-review-stars">★★★★★</div><h3>최고예요!!</h3><p>제품의 마감이 정교하고 고급스러워요. 아주 만족스럽습니다.</p><a href="mypage-review.html">더보기</a></article><article class="dashboard-review-card"><div class="dashboard-review-product"><img alt="프랑스 자수 키트" src="img/product-list/embroidery-candle.png"/><div><b>프랑스 자수 키트</b><span>12,000원</span><small>뜨개장인</small></div></div><div aria-label="별점 5점" class="dashboard-review-stars">★★★★★</div><h3>너무 좋아용</h3><p>가격 대비 성능이 훌륭해요. 제가 기대했던 것 이상으로 좋은 제품이었습니다.</p><a href="mypage-review.html">더보기</a></article><article class="dashboard-review-card"><div class="dashboard-review-product"><img alt="고양이 모형" src="img/ranking/cat-ceramic.png"/><div><b>고양이 모형</b><span>8,000원</span><small>룰루랄라</small></div></div><div aria-label="별점 5점" class="dashboard-review-stars">★★★★★</div><h3>귀여움</h3><p>디자인이 세련되고 어디에 두어도 잘 어울립니다.</p><a href="mypage-review.html">더보기</a></article></div></section></section></main><footer>
-<span class="logo">Emade</span>
-<p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
-<div class="footer_link">
-<a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>내 정보</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="variable.css" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" />
+    <link href="component/card.css" rel="stylesheet" />
+    <link href="css/pages.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">Emade</a>
+      <form class="search">
+        <input placeholder="상품, 태그로 검색해보세요!" type="text" />
+        <button type="button"><img src="svg/search.svg" /></button>
+      </form>
+      <!-- js 적용 시 로그인/로그아웃 수정. -->
+      <div class="menu">
+        <a href="#" class="menu_list">로그아웃</a>
+        <a href="/mypage-wishlist.html" class="menu_list">찜</a>
+        <a href="/mypage-info.html" class="menu_list">마이페이지</a>
+        <a href="/cart.html" class="menu_list">장바구니</a>
+      </div>
+    </header>
+    <nav>
+      <a href="#">전체</a>
+      <a href="#">뜨개질</a>
+      <a href="#">키링/액세서리</a>
+      <a href="#">문구</a>
+      <a href="#">수공예품</a>
+      <a href="#">DIY</a>
+      <a href="#">홈데코</a>
+      <a href="#">랭킹</a>
+      <a href="#">기타</a>
+    </nav>
+    <div class="crumb">홈 &gt; 마이페이지</div>
+    <main class="page">
+      <aside class="side">
+        <h2>마이페이지</h2>
+        <nav class="mypage-side-nav">
+          <a class="active" href="mypage-info.html">내 정보</a
+          ><a href="mypage-schedule.html">나의 거래 일정</a
+          ><a href="mypage-wishlist.html">찜 목록</a
+          ><a href="mypage-myreg.html">내가 등록한 상품</a
+          ><a href="mypage-history.html">거래 내역</a
+          ><a href="mypage-review.html">작성한 리뷰</a>
+        </nav>
+      </aside>
+      <section class="main">
+        <h1 class="title">내 정보</h1>
+        <div class="profile">
+          <div class="avatar">
+            <img alt="프로필 이미지" src="img/profile/dog.png" />
+          </div>
+          <div>
+            <b>오소리</b>
+            <div class="stats">
+              <span><strong>16위</strong><small>판매랭킹</small></span
+              ><span><strong>200</strong><small>팔로잉</small></span
+              ><span><strong>1000</strong><small>팔로워</small></span>
+            </div>
+          </div>
+        </div>
+        <section class="dashsec">
+          <div class="sectionhead">
+            <h2>나의 거래일정 <small>일정 개수 54</small></h2>
+            <a href="mypage-schedule.html">나의 일정 수정</a>
+          </div>
+          <div class="calmini">
+            <div class="calmonth">
+              <div class="calendar-month-control">
+                <button aria-label="이전 달" class="month-arrow" type="button">
+                  <img
+                    alt=""
+                    class="chevron-prev"
+                    src="svg/chevron-right.svg"
+                  /></button
+                ><strong>2026년 11월</strong
+                ><button aria-label="다음 달" class="month-arrow" type="button">
+                  <img alt="" src="svg/chevron-right.svg" />
+                </button>
+              </div>
+              <button class="today-button" type="button">오늘</button>
+            </div>
+            <div class="calgrid">
+              <div class="mini-weekday">일</div>
+              <div class="mini-weekday">월</div>
+              <div class="mini-weekday">화</div>
+              <div class="mini-weekday">수</div>
+              <div class="mini-weekday">목</div>
+              <div class="mini-weekday">금</div>
+              <div class="mini-weekday">토</div>
+              <div><b>1</b></div>
+              <div><b>2</b></div>
+              <div><b>3</b></div>
+              <div><b>4</b></div>
+              <div><b>5</b></div>
+              <div><b>6</b></div>
+              <div><b>7</b></div>
+              <div><b>8</b></div>
+              <div><b>9</b><i>구매</i> <em>판매</em></div>
+              <div><b>10</b></div>
+              <div><b>11</b></div>
+              <div><b>12</b></div>
+              <div><b>13</b></div>
+              <div><b>14</b></div>
+              <div><b>15</b></div>
+              <div><b>16</b></div>
+              <div><b>17</b></div>
+              <div><b>18</b></div>
+              <div><b>19</b></div>
+              <div><b>20</b></div>
+              <div><b>21</b></div>
+              <div><b>22</b></div>
+              <div><b>23</b><i>구매</i> <em>판매</em></div>
+              <div><b>24</b></div>
+              <div><b>25</b></div>
+              <div><b>26</b><i>구매</i> <em>판매</em></div>
+              <div><b>27</b></div>
+              <div><b>28</b></div>
+              <div><b>29</b></div>
+              <div><b>30</b></div>
+            </div>
+          </div>
+        </section>
+        <section class="dashsec">
+          <div class="sectionhead">
+            <h2>찜 목록 <small>찜 개수 33</small></h2>
+            <a href="mypage-wishlist.html">더보기</a>
+          </div>
+          <div class="mini-products dashboard-products product-grid">
+            <article class="card dashboard-card">
+              <a class="card__link" href="#"
+                ><div class="card__thumb">
+                  <img
+                    alt="프랑스 자수 키트"
+                    loading="lazy"
+                    src="img/product-list/embroidery-candle.png"
+                  />
+                </div>
+                <div class="card__info">
+                  <p class="card__title">프랑스 자수 키트</p>
+                  <p class="card__price">12,000원</p>
+                  <div class="card__artist">
+                    <span class="card__profile"
+                      ><img alt="" src="img/profile/dog.png" /></span
+                    ><span class="card__artist-name">뜨개장인</span>
+                  </div>
+                </div></a
+              ><button aria-label="찜 추가" class="card__like" type="button">
+                <img alt="" src="svg/찜=On.svg" />
+              </button>
+            </article>
+            <article class="card dashboard-card">
+              <a class="card__link" href="#"
+                ><div class="card__thumb">
+                  <img
+                    alt="노을 그림"
+                    loading="lazy"
+                    src="img/product-list/dreamcatcher.png"
+                  />
+                </div>
+                <div class="card__info">
+                  <p class="card__title">노을 그림</p>
+                  <p class="card__price">10,000원</p>
+                  <div class="card__artist">
+                    <span class="card__profile"
+                      ><img alt="" src="img/profile/dog.png" /></span
+                    ><span class="card__artist-name">내가그린그림</span>
+                  </div>
+                </div></a
+              ><button aria-label="찜 추가" class="card__like" type="button">
+                <img alt="" src="svg/찜=On.svg" />
+              </button>
+            </article>
+            <article class="card dashboard-card">
+              <a class="card__link" href="#"
+                ><div class="card__thumb">
+                  <img
+                    alt="고양이 모형"
+                    loading="lazy"
+                    src="img/ranking/cat-ceramic.png"
+                  />
+                </div>
+                <div class="card__info">
+                  <p class="card__title">고양이 모형</p>
+                  <p class="card__price">8,000원</p>
+                  <div class="card__artist">
+                    <span class="card__profile"
+                      ><img alt="" src="img/profile/dog.png" /></span
+                    ><span class="card__artist-name">룰루랄라</span>
+                  </div>
+                </div></a
+              ><button aria-label="찜 추가" class="card__like" type="button">
+                <img alt="" src="svg/찜=On.svg" />
+              </button>
+            </article>
+            <article class="card dashboard-card">
+              <a class="card__link" href="#"
+                ><div class="card__thumb">
+                  <img
+                    alt="도자기 오브제"
+                    loading="lazy"
+                    src="img/ranking/cat-ceramic.png"
+                  />
+                </div>
+                <div class="card__info">
+                  <p class="card__title">고양이 모형</p>
+                  <p class="card__price">8,000원</p>
+                  <div class="card__artist">
+                    <span class="card__profile"
+                      ><img alt="" src="img/profile/dog.png" /></span
+                    ><span class="card__artist-name">룰루랄라</span>
+                  </div>
+                </div></a
+              ><button aria-label="찜 추가" class="card__like" type="button">
+                <img alt="" src="svg/찜=On.svg" />
+              </button>
+            </article>
+          </div>
+        </section>
+        <section class="dashsec">
+          <div class="sectionhead">
+            <h2>내가 등록한 상품 <small>총 상품 수 13</small></h2>
+            <a href="mypage-myreg.html">더보기</a>
+          </div>
+          <div class="mini-products dashboard-products product-grid">
+            <article class="card card--NoProfile dashboard-card">
+              <a class="card__link" href="#"
+                ><div class="card__thumb">
+                  <img
+                    alt="귤모양 키링"
+                    loading="lazy"
+                    src="img/product-list/rosette.png"
+                  />
+                </div>
+                <div class="card__info">
+                  <p class="card__title">귤모양 키링</p>
+                  <p class="card__price">3,000원</p>
+                </div></a
+              >
+            </article>
+            <article class="card card--NoProfile dashboard-card">
+              <a class="card__link" href="#"
+                ><div class="card__thumb">
+                  <img
+                    alt="강아지 키링"
+                    loading="lazy"
+                    src="img/product-list/nametag.png"
+                  />
+                </div>
+                <div class="card__info">
+                  <p class="card__title">강아지 키링</p>
+                  <p class="card__price">4,000원</p>
+                </div></a
+              >
+            </article>
+            <article class="card card--NoProfile dashboard-card">
+              <a class="card__link" href="#"
+                ><div class="card__thumb">
+                  <img
+                    alt="프랑스 자수 키트"
+                    loading="lazy"
+                    src="img/ranking/cat-ceramic.png"
+                  />
+                </div>
+                <div class="card__info">
+                  <p class="card__title">프랑스 자수 키트</p>
+                  <p class="card__price">12,000원</p>
+                </div></a
+              >
+            </article>
+            <article class="card card--NoProfile dashboard-card">
+              <a class="card__link" href="#"
+                ><div class="card__thumb">
+                  <img
+                    alt="고양이 모형"
+                    loading="lazy"
+                    src="img/product-list/embroidery-candle.png"
+                  />
+                </div>
+                <div class="card__info">
+                  <p class="card__title">고양이 모형</p>
+                  <p class="card__price">8,000원</p>
+                </div></a
+              >
+            </article>
+          </div>
+        </section>
+        <section class="dashsec">
+          <div class="sectionhead">
+            <h2>거래 내역 <small>총 거래 수 6</small></h2>
+            <a href="mypage-history.html">더보기</a>
+          </div>
+          <div class="dashboard-history-list">
+            <article class="historyrow">
+              <div class="thumb">
+                <img alt="원목 식기 세트" src="img/ranking/wood-dish.png" />
+              </div>
+              <div class="hdesc">
+                <div>
+                  <span class="pill sale">판매</span>
+                  <span class="pill state-planned">거래 예정</span>
+                </div>
+                <b>원목 식기 세트</b><small>구매자 꿀벌 · 1개 · 18,000원</small>
+              </div>
+              <div class="hdate">⌖　학관<br />◷　11/4(수) 18:00</div>
+              <div class="hbuttons">
+                <button class="btn-gray">거래 취소</button
+                ><a class="detail-link" href="purchase-statement.html"
+                  >자세한 거래내역</a
+                >
+              </div>
+            </article>
+            <article class="historyrow">
+              <div class="thumb">
+                <img alt="곰돌이 인형 키링" src="img/cart/keyring.png" />
+              </div>
+              <div class="hdesc">
+                <div>
+                  <span class="pill purchase">구매</span>
+                  <span class="pill state-planned">거래 예정</span>
+                </div>
+                <b>곰돌이 인형 키링</b
+                ><small>판매자 오소리 · 2개 · 56,000원</small>
+              </div>
+              <div class="hdate">⌖　정문 앞<br />◷　11/3(화) 12:00</div>
+              <div class="hbuttons">
+                <button class="btn-gray">거래 취소</button
+                ><a class="detail-link" href="purchase-statement.html"
+                  >자세한 거래내역</a
+                >
+              </div>
+            </article>
+            <article class="historyrow">
+              <div class="thumb">
+                <img
+                  alt="코끼리 퀼트 파우치"
+                  src="img/product-list/embroidery-candle.png"
+                />
+              </div>
+              <div class="hdesc">
+                <div>
+                  <span class="pill purchase">구매</span>
+                  <span class="pill state-failed">거래 실패</span>
+                </div>
+                <b>코끼리 퀼트 파우치</b
+                ><small>판매자 퀼트하우스 · 1개 · 14,000원</small>
+              </div>
+              <div class="hdate">⌖　학관<br />◷　11/1(일) 16:00</div>
+              <div class="hbuttons">
+                <a class="btn-gray" href="purchase-statement.html"
+                  >거래 확인하기</a
+                ><a class="detail-link" href="purchase-statement.html"
+                  >자세한 거래내역</a
+                >
+              </div>
+            </article>
+            <article class="historyrow">
+              <div class="thumb">
+                <img
+                  alt="프랑스 자수 키트"
+                  src="img/product-list/embroidery-candle.png"
+                />
+              </div>
+              <div class="hdesc">
+                <div>
+                  <span class="pill purchase">구매</span>
+                  <span class="pill state-done">거래 완료</span>
+                </div>
+                <b>프랑스 자수 키트</b
+                ><small>판매자 수놓는밤 · 1개 · 12,000원</small>
+              </div>
+              <div class="hdate">⌖　후문<br />◷　10/30(금) 17:00</div>
+              <div class="hbuttons">
+                <button class="btn-green">리뷰 쓰기</button
+                ><a class="detail-link" href="purchase-statement.html"
+                  >자세한 거래내역</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="dashsec">
+          <div class="sectionhead">
+            <h2>작성한 리뷰 <small>작성한 리뷰 수 100</small></h2>
+            <a href="mypage-review.html">더보기</a>
+          </div>
+          <div class="dashboard-review-cards">
+            <article class="dashboard-review-card">
+              <div class="dashboard-review-product">
+                <img alt="귤모양 키링" src="img/product-list/rosette.png" />
+                <div>
+                  <b>귤모양 키링</b><span>3,000원</span
+                  ><small>인생은달걀</small>
+                </div>
+              </div>
+              <div aria-label="별점 5점" class="dashboard-review-stars">
+                ★★★★★
+              </div>
+              <h3>최고예요!!</h3>
+              <p>제품의 마감이 정교하고 고급스러워요. 아주 만족스럽습니다.</p>
+              <a href="mypage-review.html">더보기</a>
+            </article>
+            <article class="dashboard-review-card">
+              <div class="dashboard-review-product">
+                <img
+                  alt="프랑스 자수 키트"
+                  src="img/product-list/embroidery-candle.png"
+                />
+                <div>
+                  <b>프랑스 자수 키트</b><span>12,000원</span
+                  ><small>뜨개장인</small>
+                </div>
+              </div>
+              <div aria-label="별점 5점" class="dashboard-review-stars">
+                ★★★★★
+              </div>
+              <h3>너무 좋아용</h3>
+              <p>
+                가격 대비 성능이 훌륭해요. 제가 기대했던 것 이상으로 좋은
+                제품이었습니다.
+              </p>
+              <a href="mypage-review.html">더보기</a>
+            </article>
+            <article class="dashboard-review-card">
+              <div class="dashboard-review-product">
+                <img alt="고양이 모형" src="img/ranking/cat-ceramic.png" />
+                <div>
+                  <b>고양이 모형</b><span>8,000원</span><small>룰루랄라</small>
+                </div>
+              </div>
+              <div aria-label="별점 5점" class="dashboard-review-stars">
+                ★★★★★
+              </div>
+              <h3>귀여움</h3>
+              <p>디자인이 세련되고 어디에 두어도 잘 어울립니다.</p>
+              <a href="mypage-review.html">더보기</a>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <span class="logo">Emade</span>
+      <p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
+      <div class="footer_link">
+        <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
         <a href="#">문의</a>
-</div>
-</footer>
-</body></html>
+      </div>
+    </footer>
+  </body>
+</html>
