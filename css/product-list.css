@@ -158,6 +158,7 @@
   color: var(--color-primary);
 }
 
+.pagination a.is-active,
 .pagination a:hover {
   background: var(--color-primary-light);
 }
