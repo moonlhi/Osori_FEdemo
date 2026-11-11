@@ -227,47 +227,10 @@
   cursor: pointer;
 }
 
-/* 셀렉트 박스 (공통) */
-.select {
-  height: 35px;
-  padding: 0 44px 0 16px;
-  border: 2px solid var(--color-border-default);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-default) url("/svg/chevron-down.svg") no-repeat right 16px center;
-  font-family: inherit;
-  font-size: 16px;
-  color: var(--color-text-primary);
-  appearance: none;
-  cursor: pointer;
-  outline: none;
-}
-
-.select:focus {
-  border-color: var(--color-border-focus);
-}
-
-.select--lg {
-  height: 40px;
-}
-
-.options {
-  display: flex;
-  gap: 17px;
-  margin: 29px 25px 0 11px;
-}
-
-.select--color {
-  width: 223px;
-}
-
-.select--size {
-  width: 261px;
-}
-
 /* 거래 정보 + 구매 */
 .buy {
   width: 505px;
-  margin: 28px 0 0 11px;
+  margin: 44px 0 0 8px;
   padding: 21px 18px 18px 19px;
   border-radius: var(--radius-sm);
   background: #f7f7f5;
@@ -278,12 +241,316 @@
   gap: 17px;
 }
 
-.buy__selects .select:first-child {
+/* ---------- 드롭다운 (details 태그) ---------- */
+.dropdown {
+  position: relative;
+}
+
+.dropdown--place {
   width: 222px;
 }
 
-.buy__selects .select:last-child {
+.dropdown--time {
   width: 229px;
+}
+
+.dropdown__btn {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 44px 0 16px;
+  border: 2px solid var(--color-border-default);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-default) url("/svg/chevron-down.svg") no-repeat right 16px center;
+  font-size: 16px;
+  color: var(--color-text-primary);
+  list-style: none;
+  cursor: pointer;
+}
+
+.dropdown__btn::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown[open] .dropdown__btn {
+  border-color: var(--color-primary);
+}
+
+/* 거래 장소 목록 */
+.place-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 260px;
+  padding: 6px;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-default);
+  filter: drop-shadow(0 6px 9px rgba(0, 0, 0, 0.1));
+}
+
+.place-option {
+  display: grid;
+  grid-template-columns: 1fr 18px;
+  row-gap: 2px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.place-option input {
+  display: none;
+}
+
+.place-option__name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.place-option__detail {
+  grid-column: 1;
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+.place-option:hover {
+  background: #f7f7f5;
+}
+
+.place-option:has(input:checked) {
+  background: #e8f1ec;
+}
+
+.place-option:has(input:checked) .place-option__name {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.place-option:has(input:checked)::after {
+  content: "";
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  width: 18px;
+  height: 18px;
+  background: url("/svg/check-green.svg") no-repeat center;
+}
+
+/* 거래 시간 팝오버 */
+.time-popover {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 510px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-default);
+  filter: drop-shadow(0 6px 9px rgba(0, 0, 0, 0.1));
+}
+
+.time-popover__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.calendar__month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.calendar__month strong,
+.time-popover__head strong {
+  font-weight: 600;
+}
+
+.calendar__nav {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.calendar__nav--next {
+  transform: none;
+}
+
+.calendar__nav img {
+  width: 20px;
+  height: 20px;
+}
+
+.calendar__week,
+.calendar__days {
+  display: grid;
+  grid-template-columns: repeat(7, 56px);
+  column-gap: 12px;
+}
+
+.calendar__week {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: #6b6b6b;
+}
+
+.calendar__week .is-sun {
+  color: #d64545;
+}
+
+.calendar__week .is-sat {
+  color: #3b82c4;
+}
+
+.calendar__days {
+  row-gap: 6px;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  color: #a8a8a8;
+}
+
+.day input,
+.time-slot input {
+  display: none;
+}
+
+.day.is-available {
+  background: #eaf3fb;
+  font-weight: 600;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.day.is-available:has(input:checked) {
+  background: var(--color-primary);
+  font-weight: 700;
+  color: #fff;
+}
+
+.calendar__legend {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: #eaf3fb;
+}
+
+.legend--selected::before {
+  background: var(--color-primary);
+}
+
+.time-popover__line {
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  background: #e0e0e0;
+}
+
+.time-popover__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.time-popover__head span {
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+.time-slots {
+  display: grid;
+  grid-template-columns: repeat(6, 70px);
+  gap: 8px 9px;
+}
+
+.time-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border: 1px solid #bdbdbd;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-default);
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.time-slot:has(input:checked) {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  font-weight: 600;
+  color: #fff;
+}
+
+.time-slot.is-closed {
+  border-color: #e0e0e0;
+  background: #f7f7f5;
+  font-weight: 400;
+  color: #a8a8a8;
+  text-decoration: line-through;
+  cursor: default;
+}
+
+.time-popover__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.time-popover__done {
+  height: 32px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
 }
 
 .buy__stock {
@@ -374,6 +641,23 @@
 
 .btn--primary:hover {
   background: var(--color-primary-dark);
+}
+
+/* 판매 중단: '바로 구매하기' 대신 '구매 불가' */
+.btn--stopped {
+  display: none;
+  width: 237px;
+  border: 2px solid var(--color-border-default);
+  color: var(--color-text-primary);
+  cursor: not-allowed;
+}
+
+.buy.is-stopped .btn--primary {
+  display: none;
+}
+
+.buy.is-stopped .btn--stopped {
+  display: flex;
 }
 
 /* ---------- 리뷰 + 관련상품 ---------- */

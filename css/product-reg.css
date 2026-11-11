@@ -363,6 +363,8 @@
 .action-bar__right {
   display: flex;
   gap: 12px;
+  /* 왼쪽 버튼이 없어도 오른쪽에 붙도록 */
+  margin-left: auto;
 }
 
 .btn {
@@ -374,12 +376,6 @@
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
-}
-
-.btn--line {
-  border: 2px solid var(--color-border-default);
-  background: var(--color-bg-default);
-  color: var(--color-text-primary);
 }
 
 .btn--gray {
