@@ -14,13 +14,17 @@
       <a href="/index.html" class="auth__logo">Emade</a>
       <h1 class="auth__title">회원가입</h1>
 
-      <!--
-        상태
-        - 비활성화: 칸이 하나라도 비었거나 이화 메일 형식이 아니면 버튼이 자동으로 흐려져요 (CSS :invalid)
-        - 에러: form에 is-error 클래스를 붙이면 에러 문구가 보여요
-          예) <form class="auth-form is-error" ...>
-      -->
-      <form class="auth-form" action="#" method="post">
+      <form class="auth-form" action="index.html" method="post">
+        <div class="auth-form__field">
+          <input
+            class="auth-form__input auth-form__input--with-btn"
+            type="nickname"
+            name="nickname"
+            placeholder="닉네임을 입력하세요."
+            required
+          />
+          <button type="button" class="auth-form__check">중복 확인</button>
+        </div>
         <div class="auth-form__field">
           <input
             class="auth-form__input auth-form__input--with-btn"
