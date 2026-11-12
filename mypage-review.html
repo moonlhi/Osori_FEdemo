@@ -5,49 +5,49 @@
     <meta charset="utf-8" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <title>작성한 리뷰</title>
-    <link href="./css/reset.css" rel="stylesheet" />
-    <link href="./css/variable.css" rel="stylesheet" />
-    <link href="./css/default.css" rel="stylesheet" />
-    <link href="./component/card.css" rel="stylesheet" />
-    <link href="./css/pages.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/variable.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="/component/card.css" rel="stylesheet" />
+    <link href="css/pages.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <a class="logo" href="./index.html">Emade</a>
+      <a class="logo" href="index.html">Emade</a>
       <form class="search">
         <input placeholder="상품, 태그로 검색해보세요!" type="text" />
-        <button type="button"><img src="./svg/search.svg" /></button>
+        <button type="button"><img src="svg/search.svg" /></button>
       </form>
       <!-- js 적용 시 로그인/로그아웃 수정. -->
       <div class="menu">
-        <a href="./#" class="menu_list">로그아웃</a>
-        <a href="./mypage-wishlist.html" class="menu_list">찜</a>
-        <a href="./mypage-info.html" class="menu_list">마이페이지</a>
-        <a href="./cart.html" class="menu_list">장바구니</a>
+        <a href="#" class="menu_list">로그아웃</a>
+        <a href="/mypage-wishlist.html" class="menu_list">찜</a>
+        <a href="/mypage-info.html" class="menu_list">마이페이지</a>
+        <a href="/cart.html" class="menu_list">장바구니</a>
       </div>
     </header>
     <nav>
-      <a href="./product-list.html">전체</a>
-      <a href="./product-list.html">뜨개질</a>
-      <a href="./product-list.html">키링/액세서리</a>
-      <a href="./product-list.html">문구</a>
-      <a href="./product-list.html">수공예품</a>
-      <a href="./product-list.html">DIY</a>
-      <a href="./product-list.html">홈데코</a>
-      <a href="./ranking.html">랭킹</a>
-      <a href="./product-list.html">기타</a>
+      <a href="product-list.html">전체</a>
+      <a href="product-list.html">뜨개질</a>
+      <a href="product-list.html">키링/액세서리</a>
+      <a href="product-list.html">문구</a>
+      <a href="product-list.html">수공예품</a>
+      <a href="product-list.html">DIY</a>
+      <a href="product-list.html">홈데코</a>
+      <a href="ranking.html">랭킹</a>
+      <a href="product-list.html">기타</a>
     </nav>
     <div class="crumb">홈 &gt; 마이페이지</div>
     <main class="page">
       <aside class="side">
         <h2>마이페이지</h2>
         <nav class="mypage-side-nav">
-          <a href="./mypage-info.html">내 정보</a
-          ><a href="./mypage-schedule.html">나의 거래 일정</a
-          ><a href="./mypage-wishlist.html">찜 목록</a
-          ><a href="./mypage-myreg.html">내가 등록한 상품</a
-          ><a href="./mypage-history.html">거래 내역</a
-          ><a class="active" href="./mypage-review.html">작성한 리뷰</a>
+          <a href="mypage-info.html">내 정보</a
+          ><a href="mypage-schedule.html">나의 거래 일정</a
+          ><a href="mypage-wishlist.html">찜 목록</a
+          ><a href="mypage-myreg.html">내가 등록한 상품</a
+          ><a href="mypage-history.html">거래 내역</a
+          ><a class="active" href="mypage-review.html">작성한 리뷰</a>
         </nav>
       </aside>
       <section class="main">
@@ -61,7 +61,7 @@
           <div class="reviewthumb image-slot" data-image-slot="review-1">
             <img
               alt="리뷰 상품 이미지"
-              src="./img/review-product-image/Thumbnail.png"
+              src="img/review-product-image/Thumbnail.png"
             />
           </div>
           <div class="reviewbody">
@@ -70,14 +70,14 @@
             <p>도안이 친절해서 처음인데도 금방 완성했어요. 실 색감도 예뻐요.</p>
           </div>
           <div class="reviewedit">
-            <button>수정</button><button>삭제</button>
+            <button type="button" onclick="window.location.href='review-reg.html?edit=1'">수정</button><button type="button" onclick="alert('해당 리뷰가 삭제되었습니다.')">삭제</button>
           </div>
         </article>
         <article class="reviewrow">
           <div class="reviewthumb image-slot" data-image-slot="review-2">
             <img
               alt="리뷰 상품 이미지"
-              src="./img/review-product-image/Thumbnail2.png"
+              src="img/review-product-image/Thumbnail2.png"
             />
           </div>
           <div class="reviewbody">
@@ -86,14 +86,14 @@
             <p>사진보다 실물이 더 예뻐요. 포장도 꼼꼼하게 해주셨어요.</p>
           </div>
           <div class="reviewedit">
-            <button>수정</button><button>삭제</button>
+            <button type="button" onclick="window.location.href='review-reg.html?edit=2'">수정</button><button type="button" onclick="alert('해당 리뷰가 삭제되었습니다.')">삭제</button>
           </div>
         </article>
         <article class="reviewrow">
           <div class="reviewthumb image-slot" data-image-slot="review-3">
             <img
               alt="리뷰 상품 이미지"
-              src="./img/review-product-image/Thumbnail3.png"
+              src="img/review-product-image/Thumbnail3.png"
             />
           </div>
           <div class="reviewbody">
@@ -105,14 +105,14 @@
             </p>
           </div>
           <div class="reviewedit">
-            <button>수정</button><button>삭제</button>
+            <button type="button" onclick="window.location.href='review-reg.html?edit=3'">수정</button><button type="button" onclick="alert('해당 리뷰가 삭제되었습니다.')">삭제</button>
           </div>
         </article>
         <article class="reviewrow">
           <div class="reviewthumb image-slot" data-image-slot="review-4">
             <img
               alt="리뷰 상품 이미지"
-              src="./img/review-product-image/Thumbnail4.png"
+              src="img/review-product-image/Thumbnail4.png"
             />
           </div>
           <div class="reviewbody">
@@ -121,14 +121,14 @@
             <p>바느질이 튼튼하고 마감이 깔끔해요. 친구가 정말 좋아했어요.</p>
           </div>
           <div class="reviewedit">
-            <button>수정</button><button>삭제</button>
+            <button type="button" onclick="window.location.href='review-reg.html?edit=4'">수정</button><button type="button" onclick="alert('해당 리뷰가 삭제되었습니다.')">삭제</button>
           </div>
         </article>
         <article class="reviewrow">
           <div class="reviewthumb image-slot" data-image-slot="review-5">
             <img
               alt="리뷰 상품 이미지"
-              src="./img/review-product-image/Thumbnail5.png"
+              src="img/review-product-image/Thumbnail5.png"
             />
           </div>
           <div class="reviewbody">
@@ -137,7 +137,7 @@
             <p>디자인은 귀여운데 유약이 살짝 뭉친 부분이 있었어요.</p>
           </div>
           <div class="reviewedit">
-            <button>수정</button><button>삭제</button>
+            <button type="button" onclick="window.location.href='review-reg.html?edit=5'">수정</button><button type="button" onclick="alert('해당 리뷰가 삭제되었습니다.')">삭제</button>
           </div>
         </article>
         <div class="pagination">&lt;　1　2　3　4　5　&gt;</div>
@@ -147,8 +147,8 @@
       <span class="logo">Emade</span>
       <p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
       <div class="footer_link">
-        <a href="./#">이용약관</a> · <a href="./#">개인정보처리방침</a> ·
-        <a href="./#">문의</a>
+        <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
+        <a href="#">문의</a>
       </div>
     </footer>
   </body>
