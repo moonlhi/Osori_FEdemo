@@ -5,49 +5,49 @@
     <meta charset="utf-8" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <title>나의 거래 일정</title>
-    <link href="css/reset.css" rel="stylesheet" />
-    <link href="css/variable.css" rel="stylesheet" />
-    <link href="css/default.css" rel="stylesheet" />
-    <link href="/component/card.css" rel="stylesheet" />
-    <link href="css/pages.css" rel="stylesheet" />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/variable.css" rel="stylesheet" />
+    <link href="./css/default.css" rel="stylesheet" />
+    <link href="./component/card.css" rel="stylesheet" />
+    <link href="./css/pages.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <a class="logo" href="index.html">Emade</a>
+      <a class="logo" href="./index.html">Emade</a>
       <form class="search">
         <input placeholder="상품, 태그로 검색해보세요!" type="text" />
-        <button type="button"><img src="svg/search.svg" /></button>
+        <button type="button"><img src="./svg/search.svg" /></button>
       </form>
       <!-- js 적용 시 로그인/로그아웃 수정. -->
       <div class="menu">
-        <a href="#" class="menu_list">로그아웃</a>
-        <a href="/mypage-wishlist.html" class="menu_list">찜</a>
-        <a href="/mypage-info.html" class="menu_list">마이페이지</a>
-        <a href="/cart.html" class="menu_list">장바구니</a>
+        <a href="./#" class="menu_list">로그아웃</a>
+        <a href="./mypage-wishlist.html" class="menu_list">찜</a>
+        <a href="./mypage-info.html" class="menu_list">마이페이지</a>
+        <a href="./cart.html" class="menu_list">장바구니</a>
       </div>
     </header>
     <nav>
-      <a href="product-list.html">전체</a>
-      <a href="product-list.html">뜨개질</a>
-      <a href="product-list.html">키링/액세서리</a>
-      <a href="product-list.html">문구</a>
-      <a href="product-list.html">수공예품</a>
-      <a href="product-list.html">DIY</a>
-      <a href="product-list.html">홈데코</a>
-      <a href="ranking.html">랭킹</a>
-      <a href="product-list.html">기타</a>
+      <a href="./product-list.html">전체</a>
+      <a href="./product-list.html">뜨개질</a>
+      <a href="./product-list.html">키링/액세서리</a>
+      <a href="./product-list.html">문구</a>
+      <a href="./product-list.html">수공예품</a>
+      <a href="./product-list.html">DIY</a>
+      <a href="./product-list.html">홈데코</a>
+      <a href="./ranking.html">랭킹</a>
+      <a href="./product-list.html">기타</a>
     </nav>
     <div class="crumb">홈 &gt; 마이페이지</div>
     <main class="page">
       <aside class="side">
         <h2>마이페이지</h2>
         <nav class="mypage-side-nav">
-          <a href="mypage-info.html">내 정보</a
-          ><a class="active" href="mypage-schedule.html">나의 거래 일정</a
-          ><a href="mypage-wishlist.html">찜 목록</a
-          ><a href="mypage-myreg.html">내가 등록한 상품</a
-          ><a href="mypage-history.html">거래 내역</a
-          ><a href="mypage-review.html">작성한 리뷰</a>
+          <a href="./mypage-info.html">내 정보</a
+          ><a class="active" href="./mypage-schedule.html">나의 거래 일정</a
+          ><a href="./mypage-wishlist.html">찜 목록</a
+          ><a href="./mypage-myreg.html">내가 등록한 상품</a
+          ><a href="./mypage-history.html">거래 내역</a
+          ><a href="./mypage-review.html">작성한 리뷰</a>
         </nav>
       </aside>
       <section class="main">
@@ -64,11 +64,11 @@
               <img
                 alt=""
                 class="chevron-prev"
-                src="svg/chevron-right.svg"
+                src="./svg/chevron-right.svg"
               /></button
             ><strong>2026년 11월</strong
             ><button aria-label="다음 달" class="month-arrow" type="button">
-              <img alt="" class="chevron-next" src="svg/chevron-right.svg" />
+              <img alt="" class="chevron-next" src="./svg/chevron-right.svg" />
             </button>
           </div>
           <button class="today-button" type="button">오늘</button>
@@ -109,7 +109,7 @@
             <a
               aria-label="11월 16일 거래 가능 시간 팝업 열기"
               class="calendar-popup-link"
-              href="#schedule-popup"
+              href="./#schedule-popup"
               >16</a
             >
           </div>
@@ -130,8 +130,8 @@
           <div class="calday selected">
             <b>26 <span class="date-alert">!</span></b>
             <div class="day-tags">
-              <a href="purchase-statement.html">구매</a
-              ><a href="purchase-statement.html">판매</a>
+              <a href="./purchase-statement.html">구매</a
+              ><a href="./purchase-statement.html">판매</a>
             </div>
             <aside class="tooltip">
               <div class="tooltip-heading">11월 26일 목요일 · 거래 2건</div>
@@ -273,8 +273,8 @@
       <span class="logo">Emade</span>
       <p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
       <div class="footer_link">
-        <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
-        <a href="#">문의</a>
+        <a href="./#">이용약관</a> · <a href="./#">개인정보처리방침</a> ·
+        <a href="./#">문의</a>
       </div>
     </footer>
     <div class="schedule-overlay" id="schedule-popup">
@@ -289,7 +289,7 @@
             <h2 id="schedule-dialog-title">11월 16일 (월) 거래 시간</h2>
             <p>이 날만 적용돼요. 주간 거래 가능 시간은 바뀌지 않아요.</p>
           </div>
-          <a class="schedule-close" href="#schedule-calendar">×</a>
+          <a class="schedule-close" href="./#schedule-calendar">×</a>
         </div>
         <label class="schedule-dayoff"
           ><input id="dayoff" type="checkbox" /> 이 날 거래 안 함</label
@@ -459,8 +459,8 @@
           예약된 시간은 바꿀 수 없어요. 먼저 해당 주문을 취소해 주세요.
         </p>
         <div class="schedule-dialog-actions">
-          <a class="schedule-cancel" href="#schedule-calendar">취소</a
-          ><a class="schedule-confirm" href="#schedule-calendar">저장</a>
+          <a class="schedule-cancel" href="./#schedule-calendar">취소</a
+          ><a class="schedule-confirm" href="./#schedule-calendar">저장</a>
         </div>
       </div>
     </div>

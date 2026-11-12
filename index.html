@@ -5,38 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emade</title>
     <!-- 파일 경로 변경 시 수정에 유의해주세요 -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/variable.css" />
-    <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="component/card.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variable.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./component/card.css" />
   </head>
   <body>
     <header>
-      <a href="index.html" class="logo">Emade</a>
+      <a href="./index.html" class="logo">Emade</a>
       <form class="search">
         <input type="text" placeholder="상품, 태그로 검색해보세요!" />
-        <button><img src="/svg/search.svg" /></button>
+        <button><img src="./svg/search.svg" /></button>
       </form>
       <!-- js 적용 시 로그인/로그아웃 수정. -->
       <div class="menu">
-        <a href="#" class="menu_list">로그아웃</a>
-        <a href="/mypage-wishlist.html" class="menu_list">찜</a>
-        <a href="/mypage-info.html" class="menu_list">마이페이지</a>
-        <a href="/cart.html" class="menu_list">장바구니</a>
+        <a href="./#" class="menu_list">로그아웃</a>
+        <a href="./mypage-wishlist.html" class="menu_list">찜</a>
+        <a href="./mypage-info.html" class="menu_list">마이페이지</a>
+        <a href="./cart.html" class="menu_list">장바구니</a>
       </div>
     </header>
 
     <nav>
-      <a href="product-list.html">전체</a>
-      <a href="product-list.html">뜨개질</a>
-      <a href="product-list.html">키링/액세서리</a>
-      <a href="product-list.html">문구</a>
-      <a href="product-list.html">수공예품</a>
-      <a href="product-list.html">DIY</a>
-      <a href="product-list.html">홈데코</a>
-      <a href="ranking.html">랭킹</a>
-      <a href="product-list.html">기타</a>
+      <a href="./product-list.html">전체</a>
+      <a href="./product-list.html">뜨개질</a>
+      <a href="./product-list.html">키링/액세서리</a>
+      <a href="./product-list.html">문구</a>
+      <a href="./product-list.html">수공예품</a>
+      <a href="./product-list.html">DIY</a>
+      <a href="./product-list.html">홈데코</a>
+      <a href="./ranking.html">랭킹</a>
+      <a href="./product-list.html">기타</a>
     </nav>
 
     <main>
@@ -48,18 +48,21 @@
           <p class="banner__desc">
             이화여대 학생 창작자들의 핸드메이드 마켓을 만나보세요.
           </p>
-          <a href="/product-list.html" class="banner__btn">상품 둘러보기</a>
+          <a href="./product-list.html" class="banner__btn">상품 둘러보기</a>
         </div>
-        <img class="banner__img" src="/img/banner.png" />
+        <img class="banner__img" src="./img/banner.png" />
       </section>
 
       <!-- ===== 인기 상품 (card3: 작가 프로필 없음) ===== -->
       <section class="home__section">
         <div class="best-list">
           <article class="card card--NoProfile">
-            <a href="/product-detail.html" class="card__link">
+            <a href="./product-detail.html" class="card__link">
               <div class="card__thumb">
-                <img src="/img/index-product-image/index-product1.png" alt="" />
+                <img
+                  src="./img/index-product-image/index-product1.png"
+                  alt=""
+                />
               </div>
               <div class="card__info">
                 <h3 class="card__title">프랑스 자수 키트</h3>
@@ -67,13 +70,16 @@
               </div>
             </a>
             <button type="button" class="card__like">
-              <img src="/svg/찜=Off.svg" />
+              <img src="./svg/like-Off.svg" />
             </button>
           </article>
           <article class="card card--NoProfile">
-            <a href="/product-detail.html" class="card__link">
+            <a href="./product-detail.html" class="card__link">
               <div class="card__thumb">
-                <img src="/img/index-product-image/index-product2.png" alt="" />
+                <img
+                  src="./img/index-product-image/index-product2.png"
+                  alt=""
+                />
               </div>
               <div class="card__info">
                 <h3 class="card__title">파스텔 무지개 장식</h3>
@@ -81,13 +87,16 @@
               </div>
             </a>
             <button type="button" class="card__like">
-              <img src="/svg/찜=Off.svg" />
+              <img src="./svg/like-Off.svg" />
             </button>
           </article>
           <article class="card card--NoProfile">
-            <a href="/product-detail.html" class="card__link">
+            <a href="./product-detail.html" class="card__link">
               <div class="card__thumb">
-                <img src="/img/index-product-image/index-product3.png" alt="" />
+                <img
+                  src="./img/index-product-image/index-product3.png"
+                  alt=""
+                />
               </div>
               <div class="card__info">
                 <h3 class="card__title">소이 캔들</h3>
@@ -95,13 +104,16 @@
               </div>
             </a>
             <button type="button" class="card__like">
-              <img src="/svg/찜=Off.svg" />
+              <img src="./svg/like-Off.svg" />
             </button>
           </article>
           <article class="card card--NoProfile">
-            <a href="/product-detail.html" class="card__link">
+            <a href="./product-detail.html" class="card__link">
               <div class="card__thumb">
-                <img src="/img/index-product-image/index-product4.png" alt="" />
+                <img
+                  src="./img/index-product-image/index-product4.png"
+                  alt=""
+                />
               </div>
               <div class="card__info">
                 <h3 class="card__title">플라워 레진 집게핀</h3>
@@ -109,13 +121,16 @@
               </div>
             </a>
             <button type="button" class="card__like">
-              <img src="/svg/찜=On.svg" />
+              <img src="./svg/like-On.svg" />
             </button>
           </article>
           <article class="card card--NoProfile">
-            <a href="/product-detail.html" class="card__link">
+            <a href="./product-detail.html" class="card__link">
               <div class="card__thumb">
-                <img src="/img/index-product-image/index-product5.png" alt="" />
+                <img
+                  src="./img/index-product-image/index-product5.png"
+                  alt=""
+                />
               </div>
               <div class="card__info">
                 <h3 class="card__title">수제 왁뿌볼</h3>
@@ -123,13 +138,16 @@
               </div>
             </a>
             <button type="button" class="card__like">
-              <img src="/svg/찜=Off.svg" />
+              <img src="./svg/like-Off.svg" />
             </button>
           </article>
           <article class="card card--NoProfile">
-            <a href="/product-detail.html" class="card__link">
+            <a href="./product-detail.html" class="card__link">
               <div class="card__thumb">
-                <img src="/img/index-product-image/index-product6.png" alt="" />
+                <img
+                  src="./img/index-product-image/index-product6.png"
+                  alt=""
+                />
               </div>
               <div class="card__info">
                 <h3 class="card__title">수제 말랑이</h3>
@@ -137,7 +155,7 @@
               </div>
             </a>
             <button type="button" class="card__like">
-              <img src="/svg/찜=On.svg" />
+              <img src="./svg/like-On.svg" />
             </button>
           </article>
         </div>
@@ -147,77 +165,86 @@
       <section class="home__section">
         <div class="section__nav">
           <h2 class="section-head__title">추천 상품</h2>
-          <a href="/product-list.html" class="section-head__more"
+          <a href="./product-list.html" class="section-head__more"
             >더보기 &gt;</a
           >
         </div>
 
         <div class="recommend-list">
           <article class="card">
-            <a href="/product-detail.html" class="card__link">
+            <a href="./product-detail.html" class="card__link">
               <div class="card__thumb">
-                <img src="/img/index-product-image/index-product7.png" alt="" />
+                <img
+                  src="./img/index-product-image/index-product7.png"
+                  alt=""
+                />
               </div>
               <div class="card__info">
                 <h3 class="card__title">뜨개 데이지 파우치</h3>
                 <p class="card__price">12,000원</p>
                 <div class="card__artist">
                   <span class="card__profile"
-                    ><img src="/svg/profile.svg" alt=""
+                    ><img src="./svg/profile.svg" alt=""
                   /></span>
                   <span class="card__artist-name">컴공짱</span>
                 </div>
               </div>
             </a>
             <button type="button" class="card__like">
-              <img src="/svg/찜=On.svg" />
+              <img src="./svg/like-On.svg" />
             </button>
           </article>
           <article class="card">
-            <a href="/product-detail.html" class="card__link">
+            <a href="./product-detail.html" class="card__link">
               <div class="card__thumb">
-                <img src="/img/index-product-image/index-product8.png" alt="" />
+                <img
+                  src="./img/index-product-image/index-product8.png"
+                  alt=""
+                />
               </div>
               <div class="card__info">
                 <h3 class="card__title">비즈 플라워 팔찌</h3>
                 <p class="card__price">9,500원</p>
                 <div class="card__artist">
                   <span class="card__profile"
-                    ><img src="/svg/profile.svg" alt=""
+                    ><img src="./svg/profile.svg" alt=""
                   /></span>
                   <span class="card__artist-name">24학번김모씨</span>
                 </div>
               </div>
             </a>
             <button type="button" class="card__like">
-              <img src="/svg/찜=On.svg" />
+              <img src="./svg/like-On.svg" />
             </button>
           </article>
           <article class="card">
-            <a href="/product-detail.html" class="card__link">
+            <a href="./product-detail.html" class="card__link">
               <div class="card__thumb">
-                <img src="/img/index-product-image/index-product9.png" alt="" />
+                <img
+                  src="./img/index-product-image/index-product9.png"
+                  alt=""
+                />
               </div>
               <div class="card__info">
                 <h3 class="card__title">튤립 엽서 세트</h3>
                 <p class="card__price">5,000원</p>
                 <div class="card__artist">
                   <span class="card__profile"
-                    ><img src="/svg/profile.svg" alt=""
+                    ><img src="./svg/profile.svg" alt=""
                   /></span>
                   <span class="card__artist-name">종이다인</span>
                 </div>
               </div>
             </a>
             <button type="button" class="card__like">
-              <img src="/svg/찜=Off.svg" />
+              <img src="./svg/like-Off.svg" />
             </button>
           </article>
           <article class="card">
-            <a href="/product-detail.html" class="card__link">
+            <a href="./product-detail.html" class="card__link">
               <div class="card__thumb">
                 <img
-                  src="/img/index-product-image/index-product10.png"
+                  src="./img/index-product-image/index-product10.png"
                   alt=""
                 />
               </div>
@@ -226,14 +253,14 @@
                 <p class="card__price">5,000원</p>
                 <div class="card__artist">
                   <span class="card__profile"
-                    ><img src="/svg/profile.svg" alt=""
+                    ><img src="./svg/profile.svg" alt=""
                   /></span>
                   <span class="card__artist-name">과일만먹기30일살기</span>
                 </div>
               </div>
             </a>
             <button type="button" class="card__like">
-              <img src="/svg/찜=Off.svg" />
+              <img src="./svg/like-Off.svg" />
             </button>
           </article>
         </div>
@@ -244,8 +271,8 @@
       <span class="logo">Emade</span>
       <p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
       <div class="footer_link">
-        <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
-        <a href="#">문의</a>
+        <a href="./#">이용약관</a> · <a href="./#">개인정보처리방침</a> ·
+        <a href="./#">문의</a>
       </div>
     </footer>
   </body>

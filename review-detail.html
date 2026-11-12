@@ -5,42 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>리뷰 상세 | Emade</title>
     <!-- 파일 경로 변경 시 수정에 유의해주세요 -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/variable.css" />
-    <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/review-detail.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variable.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/review-detail.css" />
   </head>
   <body>
     <header>
-      <a href="#" class="logo">Emade</a>
+      <a href="./#" class="logo">Emade</a>
       <form class="search">
         <input type="text" placeholder="상품, 태그로 검색해보세요!" />
-        <button><img src="/svg/search.svg" /></button>
+        <button><img src="./svg/search.svg" /></button>
       </form>
       <!-- js 적용 시 로그인/로그아웃 수정. -->
       <div class="menu">
-        <a href="#" class="menu_list">로그아웃</a>
-        <a href="/mypage-wishlist.html" class="menu_list">찜</a>
-        <a href="/mypage-info.html" class="menu_list">마이페이지</a>
-        <a href="/cart.html" class="menu_list">장바구니</a>
+        <a href="./#" class="menu_list">로그아웃</a>
+        <a href="./mypage-wishlist.html" class="menu_list">찜</a>
+        <a href="./mypage-info.html" class="menu_list">마이페이지</a>
+        <a href="./cart.html" class="menu_list">장바구니</a>
       </div>
     </header>
 
     <nav>
-      <a href="/product-list.html">전체</a>
-      <a href="/product-list.html">뜨개질</a>
-      <a href="/product-list.html">키링/액세서리</a>
-      <a href="/product-list.html">문구</a>
-      <a href="/product-list.html">수공예품</a>
-      <a href="/product-list.html">DIY</a>
-      <a href="/product-list.html">홈데코</a>
-      <a href="/ranking.html">랭킹</a>
-      <a href="/product-list.html">기타</a>
+      <a href="./product-list.html">전체</a>
+      <a href="./product-list.html">뜨개질</a>
+      <a href="./product-list.html">키링/액세서리</a>
+      <a href="./product-list.html">문구</a>
+      <a href="./product-list.html">수공예품</a>
+      <a href="./product-list.html">DIY</a>
+      <a href="./product-list.html">홈데코</a>
+      <a href="./ranking.html">랭킹</a>
+      <a href="./product-list.html">기타</a>
     </nav>
 
     <main class="review-detail">
-      <a href="/review-list.html" class="back-link">
-        <img src="/svg/arrow-left.svg" alt="" />
+      <a href="./review-list.html" class="back-link">
+        <img src="./svg/arrow-left.svg" alt="" />
         리뷰 목록으로
       </a>
 
@@ -49,26 +49,26 @@
         <!-- 좌우 버튼·썸네일 클릭으로 사진 바꾸기는 JS 붙일 때 구현 -->
         <section class="gallery">
           <div class="gallery__main">
-            <img src="/img/review-product-image/MainThumnail.png" alt="" />
+            <img src="./img/review-product-image/MainThumnail.png" alt="" />
             <button type="button" class="gallery__arrow gallery__arrow--prev">
-              <img src="/svg/arrow-left.svg" alt="이전 사진" />
+              <img src="./svg/arrow-left.svg" alt="이전 사진" />
             </button>
             <button type="button" class="gallery__arrow gallery__arrow--next">
-              <img src="/svg/arrow-right.svg" alt="다음 사진" />
+              <img src="./svg/arrow-right.svg" alt="다음 사진" />
             </button>
           </div>
           <ul class="gallery__thumbs">
             <li class="is-active">
-              <img src="/img/review-product-image/Thumbnail2.png" alt="" />
+              <img src="./img/review-product-image/Thumbnail2.png" alt="" />
             </li>
             <li>
-              <img src="/img/review-product-image/Thumbnail3.png" alt="" />
+              <img src="./img/review-product-image/Thumbnail3.png" alt="" />
             </li>
             <li>
-              <img src="/img/review-product-image/Thumbnail4.png" alt="" />
+              <img src="./img/review-product-image/Thumbnail4.png" alt="" />
             </li>
             <li>
-              <img src="/img/review-product-image/Thumbnail5.png" alt="" />
+              <img src="./img/review-product-image/Thumbnail5.png" alt="" />
             </li>
           </ul>
         </section>
@@ -78,17 +78,21 @@
           <div class="review-content__top">
             <div class="review-content__rating">
               <div class="stars">
-                <img src="svg/star-rate/medium_5.svg" />
+                <img src="./svg/star-rate/medium_5.svg" />
               </div>
               <strong>5.0</strong>
             </div>
             <button type="button" class="helpful-btn">
-              <img src="/svg/like.svg" alt="" />도움돼요 <span>10</span>
+              <img src="./svg/like.svg" alt="" />도움돼요 <span>10</span>
             </button>
           </div>
 
           <div class="review-author">
-            <img class="review-author__profile" src="/svg/profile.svg" alt="" />
+            <img
+              class="review-author__profile"
+              src="./svg/profile.svg"
+              alt=""
+            />
             <div>
               <p class="review-author__name">minji**</p>
               <p class="review-author__date">2026.10.08</p>
@@ -109,10 +113,10 @@
             </p>
           </div>
 
-          <a href="/product-detail.html" class="product-summary">
+          <a href="./product-detail.html" class="product-summary">
             <img
               class="product-summary__img"
-              src="/img/review-product-image/MainThumnail.png"
+              src="./img/review-product-image/MainThumnail.png"
               alt=""
             />
             <div class="product-summary__info">
@@ -120,7 +124,7 @@
               <p class="product-summary__meta">
                 12,000원
                 <span class="product-summary__rating">
-                  <img src="/svg/star-on.svg" alt="" />4.2 (128)
+                  <img src="./svg/star-on.svg" alt="" />4.2 (128)
                 </span>
               </p>
             </div>
@@ -134,8 +138,8 @@
       <span class="logo">Emade</span>
       <p class="tagline">이화여자대학교 벗들의 핸드메이드 마켓</p>
       <div class="footer_link">
-        <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> ·
-        <a href="#">문의</a>
+        <a href="./#">이용약관</a> · <a href="./#">개인정보처리방침</a> ·
+        <a href="./#">문의</a>
       </div>
     </footer>
   </body>
