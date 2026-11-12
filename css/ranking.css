@@ -85,19 +85,19 @@
   width: 60px;
   height: 60px;
   font-size: 24px;
-  background-image: url("/svg/badge-1st.svg");
+  background-image: url("./svg/badge-1st.svg");
 }
 
 .badge--2nd {
   top: -19px;
   left: -14px;
-  background-image: url("/svg/badge-2nd.svg");
+  background-image: url("./svg/badge-2nd.svg");
 }
 
 .badge--3rd {
   top: -17px;
   left: -12px;
-  background-image: url("/svg/badge-3rd.svg");
+  background-image: url("./svg/badge-3rd.svg");
 }
 
 /* 4~9위 */
