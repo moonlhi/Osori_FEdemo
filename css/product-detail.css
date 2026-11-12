@@ -296,7 +296,7 @@
 .place-option {
   display: grid;
   grid-template-columns: 1fr 18px;
-  row-gap: 2px;
+  align-items: center;
   padding: 10px 14px;
   border-radius: 6px;
   cursor: pointer;
@@ -310,12 +310,6 @@
   font-size: 14px;
   font-weight: 500;
   color: #1a1a1a;
-}
-
-.place-option__detail {
-  grid-column: 1;
-  font-size: 12px;
-  color: #6b6b6b;
 }
 
 .place-option:hover {
@@ -334,8 +328,6 @@
 .place-option:has(input:checked)::after {
   content: "";
   grid-column: 2;
-  grid-row: 1 / span 2;
-  align-self: center;
   width: 18px;
   height: 18px;
   background: url("/svg/check-green.svg") no-repeat center;
