@@ -196,7 +196,7 @@
 }
 
 /* 본문 */
-.review-content__text {
+.review-content__input {
   margin-top: 30px;
   padding: 22px 20px;
   border-top: 1px solid #c9c9c9;
@@ -204,6 +204,11 @@
   border-radius: 6px;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.review-content__title {
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 /* 판매자 답글 */

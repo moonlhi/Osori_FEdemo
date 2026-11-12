@@ -61,7 +61,43 @@
 .review-form {
   width: 100%; /* 오른쪽 영역 너비만큼 → 후기 칸도 같이 넓어짐 */
 }
+.review-form__field--inline {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 
+.review-form__field--inline .review-form__label {
+  flex: none; /* '제목' 글자 너비 고정 */
+}
+
+.review-form__input {
+  flex: 1; /* 남은 너비 전부 → textarea와 오른쪽 끝 맞춤 */
+  min-width: 0;
+  height: 36px;
+  padding: 0 16px;
+  border: 2px solid var(--color-border-default);
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-size: 14px;
+  color: var(--color-text-primary);
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.review-form__input::placeholder {
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+}
+
+.review-form__input:focus {
+  border-color: var(--color-border-focus);
+}
+
+label {
+  display: inline;
+}
 /* 별점 */
 .rating-input {
   text-align: center;

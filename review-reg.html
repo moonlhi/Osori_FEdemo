@@ -71,9 +71,16 @@
           </section>
 
           <div class="review-form__field">
-            <label for="review-text" class="review-form__label"
-              >자세한 후기</label
-            >
+            <div class="review-form__field review-form__field--inline">
+              <label class="review-form__label" for="review-title">제목</label>
+              <input
+                id="review-title"
+                class="review-form__input"
+                type="text"
+                placeholder="예) 색감이 사진보다 더 예뻐요!"
+                maxlength="50"
+              />
+            </div>
             <textarea
               id="review-text"
               class="review-form__textarea"
